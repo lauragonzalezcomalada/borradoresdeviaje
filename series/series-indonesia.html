@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <link rel="stylesheet" href="../style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script>
+    window.onload = function(){
+      logTitle("seriesindonesia", "page_title", 100);   
+    }
+  </script>
+
+</head>
+
+<body id="series-indonesia">
+
+  
+<div style="display: flex; align-items: center;margin:10px 20px 0px;">
+<a href="../main_page_esp.html">
+<img src="../imgs/home_icon.png" style="height:20px;"></img>
+</a>
+<select id="language-selector">
+<option value="cat">CAT</option>
+<option value="es">ESP</option>
+ </select>
+</div>
+<div id="page_title" class="page_title" style="position:absolute;right:0;top:10px; font-size: 2em;font-weight: bold;"></div>
+
+  <div class="container-horiz" style="position:relative; top: 20px;">
+    <div class="container-vertical">
+      
+      
+      <p> 2.4</p>
+      <div style=" display: flex; flex-direction: row; ">
+        <div class="accordion" style="border: none;padding:0px;width:auto;">
+          <img src="../imgs/indonesia/warung1.JPG" style="height:75px;margin:0;"
+            onclick="openModal('../imgs/bckgrndseriesind.JPG')">
+  
+          <!-- Modal Structure -->
+          <div id="imageModal" class="modal" onclick="closeModal(event)">
+            <img class="modal-content" id="modalImage">
+          </div>
+        </div>
+        <div class="accordion" style="border: none;padding:0px;width:auto;">
+          <img src="../imgs/indonesia/warung2.JPG" style="height:75px;margin:0;"
+            onclick="openModal('../imgs/bckgrndseriesind.JPG')">
+  
+          <!-- Modal Structure -->
+          <div id="imageModal" class="modal" onclick="closeModal(event)">
+            <img class="modal-content" id="modalImage">
+          </div>
+        </div>
+       
+        <div class="accordion" style="border: none;padding:0px;width:auto;">
+          <img src="../imgs/indonesia/warung3.JPG" style="height:75px;margin:0;"
+            onclick="openModal('../imgs/bckgrndseriesind.JPG')">
+  
+          <!-- Modal Structure -->
+          <div id="imageModal" class="modal" onclick="closeModal(event)">
+            <img class="modal-content" id="modalImage">
+          </div>
+        </div>
+      </div>
+      <div class="accordion" style="border-image: url('../imgs/frame.png') 50 round;padding:0px;width:auto;">
+        <img src="../imgs/indonesia/klinklin.JPG" style="height:250px;margin:0;"
+          onclick="openModal('../imgs/indonesia/klinklin.JPG')">
+
+        <!-- Modal Structure -->
+        <div id="imageModal" class="modal" onclick="closeModal(event)">
+          <img class="modal-content" id="modalImage">
+        </div>
+      </div>
+      <div class="accordion" style="border-image: url('../imgs/frame.png') 50 round;padding:0px;width:auto;">
+        <img src="../imgs/bckgrndseriesind.JPG" style="height:250px;margin:0;"
+          onclick="openModal('../imgs/bckgrndseriesind.JPG')">
+
+        <!-- Modal Structure -->
+        <div id="imageModal" class="modal" onclick="closeModal(event)">
+          <img class="modal-content" id="modalImage">
+        </div>
+      </div>
+
+    </div>
+    <div class="container-vertical">
+      <video width="200" controls autoplay muted>
+        <source src="../imgs/indonesia/ceremonianusapenida.mp4" type="video/mp4">
+      </video>
+
+    </div>
+    <div class="container-vertical">
+      <video width="200" controls autoplay muted>
+        <source src="../imgs/indonesia/ceremonianusapenida.mp4" type="video/mp4">
+      </video>
+
+    </div>
+    <div class="container-vertical">
+      <video width="200" controls autoplay muted>
+        <source src="../imgs/indonesia/ceremonianusapenida.mp4" type="video/mp4">
+      </video>
+
+    </div>
+
+    <script src="../js/borradoresdeviaje.js"></script>
+
+</body>
+</html>

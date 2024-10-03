@@ -1,0 +1,228 @@
+body {
+    font-family: 'Cormorant';
+    height: 100%;
+
+    margin: 0;
+
+}
+
+
+a {
+    text-decoration: none;
+}
+
+
+#main-page {
+    overflow: hidden;
+    cursor: help;
+    background-image: url('imgs/bckgrndimg.JPG');
+    background-size: cover;
+    /* Adjusts the image to cover the entire background */
+    background-repeat: no-repeat;
+    /* Ensures the image doesn't repeat */
+    background-position: center;
+    /* Centers the image */
+    height: 100vh;
+    /* Ensures the body is at least the height of the viewport */
+    margin: 0px;
+}
+
+
+
+#series-australia {
+    overflow-x: hidden;
+    cursor: help;
+    background-image: url('imgs/bckgrndseriesind.JPG');
+    background-size: cover;
+    /* Adjusts the image to cover the entire background */
+    background-repeat: no-repeat;
+    /* Ensures the image doesn't repeat */
+    background-position: center;
+    /* Centers the image */
+    height: 100vh;
+    /* Ensures the body is at least the height of the viewport */
+    margin: 0px;
+}
+#series-indonesia {
+    overflow-x: hidden;
+    cursor: help;
+    background-image: url('imgs/bckgrndseriesind.JPG');
+    background-size: cover;
+    /* Adjusts the image to cover the entire background */
+    background-repeat: no-repeat;
+    /* Ensures the image doesn't repeat */
+    background-position: center;
+    /* Centers the image */
+    height: 100vh;
+    /* Ensures the body is at least the height of the viewport */
+    margin: 0px;
+}
+
+
+footer {
+    position: fixed;
+    bottom: 0;
+    margin-left: 8%;
+}
+
+.footer-block {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+#language-selector {
+    padding: 5px;
+    font-size: 12px;
+    background: none;
+    border-radius: 5px;
+    border-color: #f55d06;
+    left: 10px;
+    position: relative;
+    margin: 10px;
+    color: #6f2a02;
+
+}
+
+
+
+
+#sobre-borradores {
+    cursor: help;
+    background-color: rgba(255, 255, 255, 0.837);
+}
+
+#sobre-borradores h1,
+p {
+    margin: 20px 0;
+    line-height: 1.6;
+}
+
+#series-australia {
+    cursor: help;
+    background-color: rgba(255, 255, 255, 0.837);
+}
+
+#series-australia h1,
+p {
+    margin: 20px 0;
+    line-height: 1.6;
+}
+
+#series-australia h1 {
+    font-size: 20px;
+}
+
+/* expandable*/
+.accordion {
+    background-color: rgba(255, 255, 255, 0.85);
+    border: 15px solid transparent;
+    /* Black border */
+    padding: 20px;
+    /* Padding inside the div */
+    width: 300px;
+    /* Optional: Set the width of the div */
+    margin: 20px;
+    /* Optional: Adds space around the div */
+    text-align: center;
+    /* Optional: Center the text inside the div */
+    box-sizing: border-box;
+
+}
+
+.accordion img {
+    display: block;
+    /* Remove extra inline spacing */
+}
+
+.accordion-title {
+    padding: 15px;
+    cursor: pointer;
+    font-weight: bold;
+    background-color: transparent;
+}
+
+.accordion-content {
+    padding: 0 15px;
+    display: none;
+    margin-bottom: 10px;
+    max-height: 400px;
+    /* Set a maximum height for the accordion content */
+    overflow-y: auto;
+    /* Enable vertical scrolling */
+}
+
+.accordion-content.open {
+    max-height: 400px;
+}
+
+.accordion.expanded {
+    width: 120%;
+    /* New width when expanded */
+}
+
+.accordion-content p {
+    margin: 0;
+}
+
+.container-horiz {
+    display: flex;
+    flex-direction: row;
+}
+
+.container-horiz div {
+    margin-bottom: 10px;
+    /* Espaciado entre elementos */
+}
+
+.container-vertical {
+    display: flex;
+    flex-direction: column;
+}
+
+.container-vertical div {
+    margin-bottom: 10px;
+    /* Espaciado entre elementos */
+}
+
+/* Modal Styles */
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(241, 189, 189, 0.8);
+    /* Semi-transparent background */
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    max-width: 90%;
+    /* Limits the full-size image */
+    max-height: 90%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    animation: zoom 0.6s;
+}
+
+/* per fer la transició d'apareixer de la imatge*/
+@keyframes zoom {
+    from {
+        transform: scale(0);
+    }
+
+    to {
+        transform: scale(1);
+    }
+}
+
+
+.page_title {
+    border-right: 2px solid black;
+    white-space: nowrap;
+}
