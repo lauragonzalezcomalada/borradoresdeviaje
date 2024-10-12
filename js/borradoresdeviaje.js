@@ -43,14 +43,40 @@ function typeAndUntypeEffect() {
 }
 
 
-
 document.addEventListener("DOMContentLoaded", function() {
+    // Add click event listeners to each carousel item
+    const carouselItems = document.querySelectorAll('#carouselExample .carousel-item');
+
+    carouselItems.forEach((item) => {
+        item.addEventListener('click', function() {
+            // Get the index of the clicked item
+            const index = Array.from(carouselItems).indexOf(this);
+            // Show the modal
+            const carouselModal = document.getElementById('carouselModal');
+            const carouselModalExample = document.getElementById('carouselModalExample');
+            $(carouselModal).modal('show'); // Show modal using jQuery
+            $(carouselModalExample).carousel(index); // Move to the corresponding item in the modal carousel
+        });
+    });
+
+    // Close the modal when clicking outside of it
+    const carouselModal = document.getElementById('carouselModal');
+    carouselModal.addEventListener('click', function(e) {
+        if (e.target === carouselModal) {
+            $(carouselModal).modal('hide'); // Hide modal using jQuery
+        }
+    });
+});
+
+/*document.addEventListener("DOMContentLoaded", function() {
     const accordions = document.querySelectorAll(".accordion-btn");
 
     accordions.forEach((accordion) => {
         accordion.addEventListener("click", function() {
+            console.log(this.previousElementSibling);
             // Toggle the content visibility
             const content = this.nextElementSibling;
+            console.log(content);
  
             if (content.style.display === "block") {
                 content.style.display = "none";
@@ -61,15 +87,55 @@ document.addEventListener("DOMContentLoaded", function() {
             }
         });
     });
+});*/
+
+document.addEventListener("DOMContentLoaded", function() {
+    const accordions = document.querySelectorAll(".accordion");
+
+    accordions.forEach((accordion) => {
+        const button = accordion.querySelector(".accordion-btn");
+        const content = accordion.querySelector(".accordion-content");
+
+        // Retrieve the RGB values from the CSS variable set in the inline style
+        const rootStyles = getComputedStyle(accordion);
+        const backgroundColor = rootStyles.getPropertyValue('--accordion-bg-color').trim();
+
+
+         // Check the initial display state of the content
+         if (content.style.display === "block" || window.getComputedStyle(content).display === "block") {
+            // Set background color with 17% opacity if initially open
+            accordion.style.backgroundColor = `rgba(${backgroundColor}, 0.17)`;
+        } else {
+            // Set background color with 30% opacity if initially closed
+            accordion.style.backgroundColor = `rgba(${backgroundColor}, 0.30)`;
+        }
+
+        button.addEventListener("click", function() {
+            if (content.style.display === "block") {
+                content.style.display = "none"; // Hide content
+                // Apply background color with 30% opacity
+                accordion.style.backgroundColor = `rgba(${backgroundColor}, 0.30)`;
+            } else {
+                content.style.display = "block"; // Show content
+                // Apply background color with 17% opacity
+                accordion.style.backgroundColor = `rgba(${backgroundColor}, 0.17)`;
+            }
+        });
+    });
 });
 
 
-function openModal(imageSrc) {
+
+
+function openModal(imageSrc, text) {
     var modal = document.getElementById("imageModal");
     var modalImg = document.getElementById("modalImage");
+    var modalText = document.getElementById('modalText');
     
-    modal.style.display = "flex"; // Show modal (using flex to center content)
     modalImg.src = imageSrc; // Set the image source to the full-size image
+    modalText.textContent = text;
+    modal.style.display = "flex"; // Show modal (using flex to center content)
+
 }
 
 function closeModal(event) {
@@ -99,13 +165,17 @@ function languageSelector(elementsToTranslate, path) {
 
     languageSelector.addEventListener('change', function () {
         const selectedLanguage = this.value;
+        localStorage.setItem('selectedLanguage', selectedLanguage);
         loadLanguage(selectedLanguage);
     });
 
-    // Load default language (e.g., 'es')
-    loadLanguage('es');
+    // Check if a language is stored in localStorage, else default to 'es'
+    const savedLanguage = localStorage.getItem('selectedLanguage') || 'es';
+    loadLanguage(savedLanguage);
 }
 
+
+// TRANSLATING FUNCTION
 document.addEventListener('DOMContentLoaded', function() {
     const path = window.location.pathname; // Gets the current URL path
     let elementsToTranslate = [];
@@ -119,7 +189,7 @@ document.addEventListener('DOMContentLoaded', function() {
         path_to_languages = "../";
 
     } else if (path.includes('indonesia')) {
-        elementsToTranslate = [];
+        elementsToTranslate = ['donde_me_meti','bali_conocido','donde_me_meti_texto','bali_conocido_texto','why_trust_me_texto'];
         path_to_languages = "../";
     }
 
