@@ -2,14 +2,20 @@
 <html lang="en">
 
 <head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Great+Vibes&family=Sacramento&display=swap"
+    rel="stylesheet">
+
   <link rel="stylesheet" href="style.css">
+
 
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
+
   <script>
-    window.onload = function(){
-      logTitle("¿queesborradores?", "page_title", 100);   
+    window.onload = function () {
+      logTitle("¿queesborradores?", "page_title", 100);
     }
   </script>
 
@@ -17,15 +23,318 @@
 
 <body id="sobre-borradores">
 
-   <!-- Language Selector -->
-   <select id="language-selector">
+  <!-- Language Selector -->
+  <select id="language-selector">
     <option value="cat">CAT</option>
     <option value="es">ESP</option>
-</select>
+  </select>
 
-  <div id="page_title" class="page_title" style="position:absolute;right:0;top:10px; font-size: 2em;font-weight: bold;"></div>
+  <div id="page_title" class="page_title" style="position:absolute;right:0;top:10px; font-size: 2em;font-weight: bold;">
+  </div>
+
+  <div class="container-fluid">
+    <div class="row mx-0 g-2">
+      <div class="col-md-3">
+        <div class="accordion mb-1">
+          <img class="w-100" src="../imgs/indonesia/warung1.JPG" onclick="openModal('../imgs/indonesia/warung1.JPG')">
+
+          <!-- Modal Structure -->
+          <div id="imageModal" class="modal" onclick="closeModal(event)">
+            <img class="modal-content" id="modalImage">
+          </div>
+        </div>
+        <video class="w-100" controls autoplay muted>
+          <source src="../imgs/indonesia/ceremonianusapenida.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="col-md-3">
+        <div class="accordion mt-3 mb-1">
+          <img class="w-100" src="../imgs/indonesia/diamondbeach.jpg"
+            onclick="openModal('../imgs/indonesia/diamondbeach.jpg')">
+
+          <!-- Modal Structure -->
+          <div id="imageModal" class="modal" onclick="closeModal(event)">
+            <img class="modal-content" id="modalImage">
+          </div>
+        </div>
+        <div class="accordion" style="padding:0;width:auto;">
+          <p class="accordion-btn" id="donde_me_meti" style="font-family: 'Alex Brush', cursive;">Donde carajo me meti
+          </p>
+          <div class="accordion-content" style="display: none;">
+            <p>
+              ¿Donde carajo me metí? mi cabeza me iba haciendo esa pregunta mientras recorría las caoticas calles y
+              callejones que conectaban el aeropuerto de Denpasar con mi guest house en la Bukit peninsula. El caos
+              había
+              comenzado antes, al momento de cruzar la terminal de arribos y enfrentarnos cara a cara con los taxistas
+              desesperados que buscan con todas su energias la mejor presa a la que poder estafar para obtener la mayor
+              cantidad de rupias posible. Antes de empezar el viaje ya habiamos sido advertidos sobre la situación con
+              la
+              que hay que lidiar al momento de llegar, por lo que nuestra posisión fue muy a la defensiva, lo que no
+              aminoró el stress vivido. Conseguimos un taxi que nos cobró lo mismo que una aplicación que reemplaza a
+              Uber
+              en Indonesia, y comenzamos el lento (no lo mismo que largo) trayecto hasta Uluwatu, el sur de Bali nos
+              esperaba. El "orden" percibido en las calles cercanas al aeropuerto se transformó inmediatamente en el
+              momento que doblamos en un callejón que conducía a la avenida principal de Uluwatu. Las calles angostas,
+              destruidas, llenas de motos, escombros y basura en todos lados, abandono general. Venía de Australia,
+              donde
+              había vivido casi 7 meses, y me había acostumbrado un poco a la limpieza, el orden y la seguridad propia
+              del
+              país de los canguros, por ello la primera impresión que me dió Bali me llevó a los lugares más pobres de
+              Argentina, los cuales conozco pero no frecuento, y en los cuales no me siento seguro. Las motos circulando
+              por cualquier resquicio de calle o pedacito de vereda que encuentren (la cual en muchos casos no existían)
+              y
+              la falta absoluta de normas de tránsito, mi aversión por las motos, por considerarlas inseguras y por
+              haber
+              sido robado en una ocasión por alguien que la conducía agriaban aún más mi percepción, dado que la unica
+              forma de moverse en Bali es en moto, caminar no es una opción, por las largas distancias, las pronunciadas
+              pendientes y la inexistencia en la mayoría de las calles, de veredas y moverse en taxi no nos divertía ni
+              estaba en nuestro presupuesto mochilero. Apelé entonces a mi experiencia viajera, que me decía que no
+              saque
+              conclusiones apresuradas los primeros días que llego a un lugar, porque el trajín del viaje me carga de
+              cansancio y nubla mi juicio. Llevabamos casi veinticuatro horas viajando y la noche anterior no dormimos
+              porque el aropuerto de Cairns (donde hicimos escala) se encontraba cerrado. Necesitaba dormir, aclarar mi
+              cabeza y comenzar a conocer Bali con otra mentalidad el día siguiente. Y fue una buena decisión, ya que
+              estaba dando mis primeros pasos por Indonesia, un país por demás interesante.
+
+            </p>
+          </div>
+        </div>
+        <div class="accordion mt-3 mb-1">
+          <img class="w-100" src="../imgs/indonesia/agung_desde_lombok.JPG"
+            onclick="openModal('../imgs/indonesia/agung_desde_lombok.JPG')">
+
+          <!-- Modal Structure -->
+          <div id="imageModal" class="modal" onclick="closeModal(event)">
+            <img class="modal-content" id="modalImage">
+          </div>
+        </div>
+        <div class="row mx-0 g-0">
+          <div class="col-md-4">
+            <div class="accordion">
+              <img class="w-100" src="../imgs/indonesia/indri1.JPG" onclick="openModal('../imgs/indonesia/indri1.JPG')">
+
+              <!-- Modal Structure -->
+              <div id="imageModal" class="modal" onclick="closeModal(event)">
+                <img class="modal-content" id="modalImage">
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="accordion">
+              <img class="w-100" src="../imgs/indonesia/indri2.JPG" onclick="openModal('../imgs/indonesia/indri2.JPG')">
+
+              <!-- Modal Structure -->
+              <div id="imageModal" class="modal" onclick="closeModal(event)">
+                <img class="modal-content" id="modalImage">
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="accordion">
+              <img class="w-100" src="../imgs/indonesia/indri3.JPG" onclick="openModal('../imgs/indonesia/indri3.JPG')">
+
+              <!-- Modal Structure -->
+              <div id="imageModal" class="modal" onclick="closeModal(event)">
+                <img class="modal-content" id="modalImage">
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="col-md-3">
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="accordion mb-1">
+                <img class="w-100" src="../imgs/indonesia/warung1.JPG"
+                  onclick="openModal('../imgs/indonesia/warung1.JPG')">
+
+                <!-- Modal Structure -->
+                <div id="imageModal" class="modal" onclick="closeModal(event)">
+                  <img class="modal-content" id="modalImage">
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="accordion mb-1">
+                <img class="w-100" src="../imgs/indonesia/warung2.JPG"
+                  onclick="openModal('../imgs/indonesia/warung2.JPG')">
+
+                <!-- Modal Structure -->
+                <div id="imageModal" class="modal" onclick="closeModal(event)">
+                  <img class="modal-content" id="modalImage">
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="accordion mb-1">
+                <img class="w-100" src="../imgs/indonesia/warung3.JPG"
+                  onclick="openModal('../imgs/indonesia/warung3.JPG')">
+
+                <!-- Modal Structure -->
+                <div id="imageModal" class="modal" onclick="closeModal(event)">
+                  <img class="modal-content" id="modalImage">
+                </div>
+              </div>
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          </a>
+        </div>
+        <div class="row g-0">
+          <div class="col-md-6">
+            <div class="accordion mb-1">
+              <img class="w-100" src="../imgs/indonesia/martabak1.JPG"
+                onclick="openModal('../imgs/indonesia/martabak1.JPG')">
+
+              <!-- Modal Structure -->
+              <div id="imageModal" class="modal" onclick="closeModal(event)">
+                <img class="modal-content" id="modalImage">
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="accordion mb-1">
+              <img class="w-100" src="../imgs/indonesia/martabak2.JPG"
+                onclick="openModal('../imgs/indonesia/martabak2.JPG')">
+
+              <!-- Modal Structure -->
+              <div id="imageModal" class="modal" onclick="closeModal(event)">
+                <img class="modal-content" id="modalImage">
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="accordion mb-1">
+          <img class="w-100" src="../imgs/indonesia/indri_retorcida.JPG"
+            onclick="openModal('../imgs/indonesia/indri_retorcida.JPG')">
+
+          <!-- Modal Structure -->
+          <div id="imageModal" class="modal" onclick="closeModal(event)">
+            <img class="modal-content" id="modalImage">
+          </div>
+        </div>
+
+      </div>
+      <div class="col-md-3 mt-3">
+
+
+
+
+
+        <div id="carouselExampleControls-2" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="accordion mb-1">
+                <img class="w-100" src="../imgs/indonesia/señoraseria.JPG"
+                  onclick="openModal('../imgs/indonesia/señoraseria.JPG')">
+
+                <!-- Modal Structure -->
+                <div id="imageModal" class="modal" onclick="closeModal(event)">
+                  <img class="modal-content" id="modalImage">
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="accordion mb-1">
+                <img class="w-100" src="../imgs/indonesia/señoracontenta.JPG"
+                  onclick="openModal('../imgs/indonesia/señoracontenta.JPG')">
+
+                <!-- Modal Structure -->
+                <div id="imageModal" class="modal" onclick="closeModal(event)">
+                  <img class="modal-content" id="modalImage">
+                </div>
+              </div>
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleControls-2" role="button" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleControls-2" role="button" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          </a>
+        </div>
+
+        <div class="accordion" style="padding:0;width:auto;">
+          <p class="accordion-btn" id="bali_conocido">¿Que Bali conocemos?¿o queremos conocer?</p>
+          <div class="accordion-content" style="display: block;">
+            <p>
+
+              "Estamos en la Hastings Street de Bali" me dijo Laura mientras llegabamos a Nusa Dua, la zona de resorts
+              ubicada al sudeste de Bali. Hastings Street es la calle principal de Noosa Heads, lugar donde se
+              encontraban todos los restaurantes y tiendas de la zona y punto de encuentro de australianos caretas que
+              no tienen problema en gastar doscientos o tresientos dolares por una cena. Estabamos entrando en la zona
+              que frecuentan esos mismos turistas, pero en este caso los que se atreven a salir de Australia y visitar
+              un país del 3er mundo.
+              Nuestro primer día recorriendo Bali en moto estuvo marcado por las opiniones encontradas, decidimos ir a
+              Uluwatu, playa del oeste, y nos encontramos con un escenario que nos generó disgusto. Uluwatu es el lugar
+              surfer por excelencia, los balineses lo saben y lo aprovechan, por este motivo nos vimos pagando casi
+              hasta por respirar. Al llegar al lugar me di cuenta que con marea alta la playa no existe, sino que es un
+              acantilado, y para surfear hay que meterse por una "cueva". El lugar es pintoresco, de todos modos, lo que
+              no es pintoresco y me hizo sentir incomodo es notar la brecha entre el local y el turista. Como turista me
+              sentí un invasor en un lugar donde la gente vive en la miseria o cercano a la misma. En el camino a la
+              playa recorriendo las calles vimos como vive realmente la gente en el sur de Bali y no es una realidad
+              agradable. Mucha basura, malas calles, practimente ninguna intervención del estado a la vista. Pero lo que
+              más me impresionó y que es una constante en Bali es la pasividad con la que vive la gente. Quizá sea por
+              el calor y/o la falta de recursos, pero la constante siempre es gente tirada, quieta, con expresión
+              aburrida, de latencia, mirando la nada. Podía verlo en todos lados y hasta tienen un espacio diseñado para
+              no hacer nada, los "...." una especie de gazebo que los proteje del duro sol tropical bajo el cual se
+              juntan a hacer nada. Una imagen bastante negativa en general, gente muy humilde resignada a su humilde
+              realidad, aunque debo admitir, es mi mirada occidental, poco se de su realidad.
+              El segundo día no sabíamos que hacer, ya habiamos conocido el oeste y el sur de la peninsula y estabamos
+              bastante defraudados, así que abrimos el mapa de papel y decidimos ir hacia el oeste a algun lugar que no
+              implique un viaje tan largo en moto. El dedo señalo Nusa Dua, así que nos pusimos protector solar,
+              preparamos las cosas e iniciamos el viaje. Nuestro alojamiento estaba en el centro de la peninsula, y los
+              barrios eran en general muy humildes, para hacer una comparación era parecido a San Justo en la zona oeste
+              de Buenos Aires, o Solano al sur. Un paisaje muy cargado, ruido constante, polvo, tráfico, calles rotas,
+              basura. Lugares incómodos para estar o circular. Sin embargo me vi sorprendido cuando en camino a nuestro
+              destino el mismo cambio de un momento a otro. Lo que era una calle estrecha de una sola mano por la que
+              apenas entraba un auto en cada sentido, se transformó en una calle con dos carriles por sentido, con
+              demarcación, con boulevard separatorio. Empezamos a ver señales indicativas de transito, luminarias, y
+              hasta semáforos. "Estamos entrando en una zona de plata" pensé. De a poco fueron apareciendo carteles que
+              decían "Hilton", o "Ritz" y quedó claro que estabamos entrando en zona de resorts y hoteles de lujo. Un
+              paisaje totalmente diferente, mi indignación empezó a gestarse. "Mira! Saben hacer las cosas!" le dije a
+              Laura, también "Saben donde poner la plata". Tuvimos que pasar algunas garitas de seguridad para llegar a
+              la calle principal de Nusa Dua, y mi indignación aumentó instantaneamente, ahora sí que el paisaje era
+              otro, paisajismo, decoraciones "balinesas", esculturas gigantes y fuentes, un cuidado extremo por el
+              detalle. Por solo 2000 rupias pudimos pasar a la playa de los resorts y casi nos animamos a tirarnos en
+              una reposera, pero temimos que viniera una cuenta que no podiamos pagar. No hace falta decir que la
+              realidad que se vive en el resort es completamente indiferente del lugar en el mundo donde este ubicado,
+              solo pude cambiar el color de la arena o la transparencia del agua, ni que hablar de que la realidad de la
+              resort no tiene correlación ninguna con el resto de la isla. Me pregunte entonces si la gente que viene al
+              resort conoce realmente Bali o Bali es solo el contenedor donde fue emplazado su resort. Mi pregunta quedo
+              aclara al día siguiente cuando descubrí que la calle principal de Nusa Dua esta conectada directamente con
+              el aeropuerto de Denpasar (el cual no esta muy lejos) y se mantiene así de cuidada hasta llegar al mismo.
+              Por el mimso motivo resulta evidente que la zona de resorts tenga esa ubicación cercana al aeropuerto y
+              que sea la piedra preciosa del gobierno Balines, donde pone todo sus recursos, dejando a extensas regiones
+              de Bali a su propia voluntad, sin servicios de recolección de basura, ni buenos caminos, ni ninguna
+              intervención que pueda mejorar el nivel de vida de los propios balineses. Me fui de Nusa Dua contento de
+              haber conocido ambas realidades y poder acercarme un poco más a entender como funciona la isla, y pensando
+              como el Bali que conocemos puede tener muchas caras.
+
+            </p>
+          </div>
+
+        </div>
+
+
+
+      </div>
+
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"></script>
+    <script src="js/borradoresdeviaje.js"></script>
 
 </body>
-<script src="js/sobre-borradores.js"></script>
 
 </html>
