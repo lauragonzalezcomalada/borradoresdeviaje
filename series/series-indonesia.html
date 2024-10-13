@@ -46,7 +46,7 @@
     </a>
     <select id="language-selector">
       <option value="cat">CAT</option>
-      <option value="es">ESP</option>
+      <option value="es">ARG</option>
     </select>
   </div>
   <div id="page_title" class="page_title" style="position:absolute;right:0;top:10px; font-size: 2em;">
@@ -520,22 +520,28 @@
             <div class="carousel-item active">
               <div class="mb-1">
                 <img class="w-100" src="../imgs/indonesia/señoraseria.JPG"
-                  onclick="openModal('../imgs/indonesia/señoraseria.JPG')">
+                  onclick="openModal('../imgs/indonesia/señoraseria.JPG','artesana local')">
 
                 <!-- Modal Structure -->
                 <div id="imageModal" class="modal" onclick="closeModal(event)">
-                  <img class="modal-content" id="modalImage">
+                  <div class="modal-content">
+                    <img class="modal-image" id="modalImage">
+                    <span class="modal-text" id="modalText"></span>
+                  </div>
                 </div>
               </div>
             </div>
             <div class="carousel-item">
               <div class="mb-1">
                 <img class="w-100" src="../imgs/indonesia/señoracontenta.JPG"
-                  onclick="openModal('../imgs/indonesia/señoracontenta.JPG')">
+                  onclick="openModal('../imgs/indonesia/señoracontenta.JPG','artesana local')">
 
                 <!-- Modal Structure -->
                 <div id="imageModal" class="modal" onclick="closeModal(event)">
-                  <img class="modal-content" id="modalImage">
+                  <div class="modal-content">
+                    <img class="modal-image" id="modalImage">
+                    <span class="modal-text" id="modalText"></span>
+                  </div>
                 </div>
               </div>
             </div>
