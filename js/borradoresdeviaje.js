@@ -185,14 +185,14 @@ document.addEventListener('DOMContentLoaded', function() {
         elementsToTranslate = ['about_us'];
         path_to_languages = "";
     } else if (path.includes('australia')) {
-        elementsToTranslate = ['no_son_los_lugares','aussies_primera_generacion','mi_peor_enemigo','culturally_narrow'];
+        elementsToTranslate = ['worst_enemy','worst_enemy_texto','perfect_australia','perfect_australia_texto'];
         path_to_languages = "../";
 
     } else if (path.includes('indonesia')) {
         elementsToTranslate = ['donde_me_meti','bali_conocido','donde_me_meti_texto','bali_conocido_texto','why_trust_me_texto'];
         path_to_languages = "../";
     } else if (path.includes('sobre-borradores')) {
-        elementsToTranslate = ['Borradores_manu'];
+        elementsToTranslate = ['borradores_manu','borradores_manu_texto','borradores_laura','borradores_laura_texto'];
         path_to_languages = "";
     }
 
