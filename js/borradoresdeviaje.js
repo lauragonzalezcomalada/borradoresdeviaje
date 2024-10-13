@@ -191,6 +191,9 @@ document.addEventListener('DOMContentLoaded', function() {
     } else if (path.includes('indonesia')) {
         elementsToTranslate = ['donde_me_meti','bali_conocido','donde_me_meti_texto','bali_conocido_texto','why_trust_me_texto'];
         path_to_languages = "../";
+    } else if (path.includes('sobre-borradores')) {
+        elementsToTranslate = ['Borradores_manu'];
+        path_to_languages = "";
     }
 
     // Call the function with the elements specific to the page

@@ -51,7 +51,7 @@
   </div>
   <div id="page_title" class="page_title" style="position:absolute;right:0;top:10px; font-size: 2em;">
   </div>
-  <div id="page_subtitle"  style="position:absolute;left:0.4%"></div>
+  <div id="page_subtitle"  style="position:absolute;left:0.4%; font-size: 20px;"></div>
 
   <br>
 
@@ -223,11 +223,14 @@
             <div class="carousel-item">
               <div class="mb-1">
                 <img class="w-100" src="../imgs/indonesia/templo_la_dl_lado_3.JPG"
-                  onclick="openModal('../imgs/indonesia/templo_la_dl_lado_3.JPG')">
+                  onclick="openModal('../imgs/indonesia/templo_la_dl_lado_3.JPG','templo hinduista al lado de la playa')">
 
                 <!-- Modal Structure -->
                 <div id="imageModal" class="modal" onclick="closeModal(event)">
-                  <img class="modal-content" id="modalImage">
+                  <div class="modal-content">
+                    <img class="modal-image" id="modalImage">
+                    <span class="modal-text" id="modalText"></span>
+                  </div>
                 </div>
               </div>
             </div>
@@ -241,20 +244,26 @@
         </div>
         <div class="mb-1">
           <img class="w-100" src="../imgs/indonesia/manusito_facha.JPG"
-            onclick="openModal('../imgs/indonesia/manusito_facha.jpg')">
+            onclick="openModal('../imgs/indonesia/manusito_facha.JPG','tirando facha')">
 
           <!-- Modal Structure -->
           <div id="imageModal" class="modal" onclick="closeModal(event)">
-            <img class="modal-content" id="modalImage">
+            <div class="modal-content">
+              <img class="modal-image" id="modalImage">
+              <span class="modal-text" id="modalText"></span>
+            </div>
           </div>
         </div>
         <div class="mb-1">
           <img class="w-100" src="../imgs/indonesia/diamondbeach.jpg"
-            onclick="openModal('../imgs/indonesia/diamondbeach.jpg')">
+            onclick="openModal('../imgs/indonesia/diamondbeach.jpg','Diamond beach')">
 
           <!-- Modal Structure -->
           <div id="imageModal" class="modal" onclick="closeModal(event)">
-            <img class="modal-content" id="modalImage">
+            <div class="modal-content">
+              <img class="modal-image" id="modalImage">
+              <span class="modal-text" id="modalText"></span>
+            </div>
           </div>
         </div>
         <div class="accordion"
@@ -269,42 +278,53 @@
         
         <div class="mt-1 mb-1">
           <img class="w-100" src="../imgs/indonesia/agung_desde_lombok.JPG"
-            onclick="openModal('../imgs/indonesia/agung_desde_lombok.JPG')">
+            onclick="openModal('../imgs/indonesia/agung_desde_lombok.JPG','Volcán Agung desde Lombok')">
 
           <!-- Modal Structure -->
           <div id="imageModal" class="modal position-relative" onclick="closeModal(event)">
-            <img class="modal-content" id="modalImage">
-            <span class="overlay-text">Your Text Here</span>
+            <div class="modal-content">
+              <img class="modal-image" id="modalImage">
+              <span class="modal-text" id="modalText"></span>
+            </div>
           </div>
         </div>
         <div class="row mx-0 g-0">
           <div class="col-md-4">
             <div>
-              <img class="w-100" src="../imgs/indonesia/indri1.JPG" onclick="openModal('../imgs/indonesia/indri1.JPG')">
+              <img class="w-100" src="../imgs/indonesia/indri1.JPG" onclick="openModal('../imgs/indonesia/indri1.JPG','Indri, la niña más amigable de Batu Layar')">
 
               <!-- Modal Structure -->
               <div id="imageModal" class="modal" onclick="closeModal(event)">
-                <img class="modal-content" id="modalImage">
+                <div class="modal-content">
+                  <img class="modal-image" id="modalImage">
+                  <span class="modal-text" id="modalText"></span>
+                </div>
               </div>
             </div>
           </div>
           <div class="col-md-4">
             <div>
-              <img class="w-100" src="../imgs/indonesia/indri2.JPG" onclick="openModal('../imgs/indonesia/indri2.JPG')">
+              <img class="w-100" src="../imgs/indonesia/indri2.JPG" onclick="openModal('../imgs/indonesia/indri2.JPG','Indri')">
 
               <!-- Modal Structure -->
               <div id="imageModal" class="modal" onclick="closeModal(event)">
-                <img class="modal-content" id="modalImage">
+                <div class="modal-content">
+                  <img class="modal-image" id="modalImage">
+                  <span class="modal-text" id="modalText"></span>
+                </div>
               </div>
             </div>
           </div>
           <div class="col-md-4">
             <div>
-              <img class="w-100" src="../imgs/indonesia/indri3.JPG" onclick="openModal('../imgs/indonesia/indri3.JPG')">
+              <img class="w-100" src="../imgs/indonesia/indri3.JPG" onclick="openModal('../imgs/indonesia/indri3.JPG','Indri')">
 
               <!-- Modal Structure -->
               <div id="imageModal" class="modal" onclick="closeModal(event)">
-                <img class="modal-content" id="modalImage">
+                <div class="modal-content">
+                  <img class="modal-image" id="modalImage">
+                  <span class="modal-text" id="modalText"></span>
+                </div>
               </div>
             </div>
           </div>
@@ -313,11 +333,14 @@
       </div>
       <div class="col-md-3">
         <div class="mb-1">
-          <img class="w-100" src="../imgs/indonesia/klnkln.JPG" onclick="openModal('../imgs/indonesia/klnkln.JPG')">
+          <img class="w-100" src="../imgs/indonesia/klnkln.JPG" onclick="openModal('../imgs/indonesia/klnkln.JPG','Klinking Beach')">
 
           <!-- Modal Structure -->
           <div id="imageModal" class="modal" onclick="closeModal(event)">
-            <img class="modal-content" id="modalImage">
+            <div class="modal-content">
+              <img class="modal-image" id="modalImage">
+              <span class="modal-text" id="modalText"></span>
+            </div>
           </div>
         </div>
 
@@ -326,33 +349,42 @@
             <div class="carousel-item active">
               <div class="mb-1">
                 <img class="w-100" src="../imgs/indonesia/warung1.JPG"
-                  onclick="openModal('../imgs/indonesia/warung1.JPG')">
+                  onclick="openModal('../imgs/indonesia/warung1.JPG','Warung de camino a Klinking')">
 
                 <!-- Modal Structure -->
                 <div id="imageModal" class="modal" onclick="closeModal(event)">
-                  <img class="modal-content" id="modalImage">
+                  <div class="modal-content">
+                    <img class="modal-image" id="modalImage">
+                    <span class="modal-text" id="modalText"></span>
+                  </div>
                 </div>
               </div>
             </div>
             <div class="carousel-item">
               <div class="mb-1">
                 <img class="w-100" src="../imgs/indonesia/warung2.JPG"
-                  onclick="openModal('../imgs/indonesia/warung2.JPG')">
+                  onclick="openModal('../imgs/indonesia/warung2.JPG','Warung de camino a Klinking')">
 
                 <!-- Modal Structure -->
                 <div id="imageModal" class="modal" onclick="closeModal(event)">
-                  <img class="modal-content" id="modalImage">
+                  <div class="modal-content">
+                    <img class="modal-image" id="modalImage">
+                    <span class="modal-text" id="modalText"></span>
+                  </div>
                 </div>
               </div>
             </div>
             <div class="carousel-item">
               <div class="mb-1">
                 <img class="w-100" src="../imgs/indonesia/warung3.JPG"
-                  onclick="openModal('../imgs/indonesia/warung3.JPG')">
+                  onclick="openModal('../imgs/indonesia/warung3.JPG','Warung de camino a Klinking')">
 
                 <!-- Modal Structure -->
                 <div id="imageModal" class="modal" onclick="closeModal(event)">
-                  <img class="modal-content" id="modalImage">
+                  <div class="modal-content">
+                    <img class="modal-image" id="modalImage">
+                    <span class="modal-text" id="modalText"></span>
+                  </div>
                 </div>
               </div>
             </div>
@@ -373,18 +405,21 @@
             <div class="carousel-item active">
               <div class="mb-1">
                 <img class="w-100" src="../imgs/indonesia/water1.JPG"
-                  onclick="openModal('../imgs/indonesia/water1.JPG')">
+                  onclick="openModal('../imgs/indonesia/water1.JPG','El bravo mar de Klinking Beach')">
 
                 <!-- Modal Structure -->
                 <div id="imageModal" class="modal" onclick="closeModal(event)">
-                  <img class="modal-content" id="modalImage">
+                  <div class="modal-content">
+                    <img class="modal-image" id="modalImage">
+                    <span class="modal-text" id="modalText"></span>
+                  </div>
                 </div>
               </div>
             </div>
             <div class="carousel-item">
               <div class="mb-1">
                 <img class="w-100" src="../imgs/indonesia/water2.JPG"
-                  onclick="openModal('../imgs/indonesia/water2.JPG')">
+                  onclick="openModal('../imgs/indonesia/water2.JPG','El bravo mar de Klinking Beach')">
 
                 <!-- Modal Structure -->
                 <div id="imageModal" class="modal" onclick="closeModal(event)">
@@ -418,22 +453,28 @@
 
             <div class="mb-1">
               <img class="w-100" src="../imgs/indonesia/martabak1.JPG"
-                onclick="openModal('../imgs/indonesia/martabak1.JPG')">
+                onclick="openModal('../imgs/indonesia/martabak1.JPG','Puestito de martabak, la típica tortita indonesia')">
 
               <!-- Modal Structure -->
               <div id="imageModal" class="modal" onclick="closeModal(event)">
-                <img class="modal-content" id="modalImage">
+                <div class="modal-content">
+                  <img class="modal-image" id="modalImage">
+                  <span class="modal-text" id="modalText"></span>
+                </div>
               </div>
             </div>
           </div>
           <div class="col-md-6">
             <div class="mb-1">
               <img class="w-100" src="../imgs/indonesia/martabak2.JPG"
-                onclick="openModal('../imgs/indonesia/martabak2.JPG')">
+                onclick="openModal('../imgs/indonesia/martabak2.JPG','Producción local de martabak en Lombok')">
 
               <!-- Modal Structure -->
               <div id="imageModal" class="modal" onclick="closeModal(event)">
-                <img class="modal-content" id="modalImage">
+                <div class="modal-content">
+                  <img class="modal-image" id="modalImage">
+                  <span class="modal-text" id="modalText"></span>
+                </div>
               </div>
             </div>
           </div>
