@@ -181,11 +181,11 @@ document.addEventListener('DOMContentLoaded', function() {
     let elementsToTranslate = [];
     let path_to_languages;
 
-    if (path.includes('main_page')) {
+    if (path.includes('index')) {
         elementsToTranslate = ['about_us'];
         path_to_languages = "";
     } else if (path.includes('australia')) {
-        elementsToTranslate = ['worst_enemy','worst_enemy_texto','perfect_australia','perfect_australia_texto'];
+        elementsToTranslate = ['worst_enemy','worst_enemy_texto','perfect_australia','perfect_australia_texto',,'culturally_narrow','culturally_narrow_texto'];
         path_to_languages = "../";
 
     } else if (path.includes('indonesia')) {
