@@ -181,7 +181,7 @@ document.addEventListener('DOMContentLoaded', function() {
     let elementsToTranslate = [];
     let path_to_languages;
 
-    if (path.includes('index')) {
+    if (path.includes('index') ||  path.includes('')) {
         elementsToTranslate = ['about_us'];
         path_to_languages = "";
     } else if (path.includes('australia')) {
