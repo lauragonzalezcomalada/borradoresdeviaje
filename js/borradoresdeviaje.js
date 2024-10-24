@@ -43,7 +43,7 @@ function typeAndUntypeEffect() {
 }
 
 
-document.addEventListener("DOMContentLoaded", function() {
+/*document.addEventListener("DOMContentLoaded", function() {
     // Add click event listeners to each carousel item
     const carouselItems = document.querySelectorAll('#carouselExample .carousel-item');
 
@@ -66,7 +66,7 @@ document.addEventListener("DOMContentLoaded", function() {
             $(carouselModal).modal('hide'); // Hide modal using jQuery
         }
     });
-});
+});*/
 
 /*document.addEventListener("DOMContentLoaded", function() {
     const accordions = document.querySelectorAll(".accordion-btn");
@@ -146,14 +146,40 @@ function closeModal(event) {
 }
 
 
+
+// TRANSLATING FUNCTION
+document.addEventListener('DOMContentLoaded', function() {
+    const path = window.location.pathname; // Gets the current URL path
+    let elementsToTranslate = [];
+    let path_to_languages;
+
+    if (path.includes('australia')) {
+        elementsToTranslate = ['worst_enemy','worst_enemy_texto','perfect_australia','perfect_australia_texto',,'culturally_narrow','culturally_narrow_texto'];
+        path_to_languages = "../";
+
+    } else if (path.includes('indonesia')) {
+        elementsToTranslate = ['donde_me_meti','bali_conocido','donde_me_meti_texto','bali_conocido_texto','why_trust_me_texto'];
+        path_to_languages = "../";
+    } else if (path.includes('sobre-borradores')) {
+        elementsToTranslate = ['borradores_manu','borradores_manu_texto','borradores_laura','borradores_laura_texto'];
+        path_to_languages = "../";
+    } else if (path.includes('index') ||  path.includes('/')) {
+        elementsToTranslate = ['about_us'];
+        path_to_languages = "";
+    }
+    // Call the function with the elements specific to the page
+    languageSelector(elementsToTranslate, path_to_languages);
+});
+
+
 //LANGUAGE TRANSLATING
 function languageSelector(elementsToTranslate, path) {
     const languageSelector = document.getElementById('language-selector');
 
+
     function loadLanguage(language) {
         // Update the language selector to show the selected language
         languageSelector.value = language;
-
         fetch(path+`languages/${language}.json`)
             .then(response => response.json())
             .then(data => {
@@ -174,31 +200,6 @@ function languageSelector(elementsToTranslate, path) {
     loadLanguage(savedLanguage);
 }
 
-
-// TRANSLATING FUNCTION
-document.addEventListener('DOMContentLoaded', function() {
-    const path = window.location.pathname; // Gets the current URL path
-    let elementsToTranslate = [];
-    let path_to_languages;
-
-    if (path.includes('index') ||  path.includes('')) {
-        elementsToTranslate = ['about_us'];
-        path_to_languages = "";
-    } else if (path.includes('australia')) {
-        elementsToTranslate = ['worst_enemy','worst_enemy_texto','perfect_australia','perfect_australia_texto',,'culturally_narrow','culturally_narrow_texto'];
-        path_to_languages = "../";
-
-    } else if (path.includes('indonesia')) {
-        elementsToTranslate = ['donde_me_meti','bali_conocido','donde_me_meti_texto','bali_conocido_texto','why_trust_me_texto'];
-        path_to_languages = "../";
-    } else if (path.includes('sobre-borradores')) {
-        elementsToTranslate = ['borradores_manu','borradores_manu_texto','borradores_laura','borradores_laura_texto'];
-        path_to_languages = "";
-    }
-
-    // Call the function with the elements specific to the page
-    languageSelector(elementsToTranslate, path_to_languages);
-});
 
 
 function logTitle(word, elementId, speed = 100) {
