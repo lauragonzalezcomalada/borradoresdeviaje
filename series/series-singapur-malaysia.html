@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../styles/colors.css">
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        window.onload = function () {
+            if (document.getElementById('language-selector').value === 'cat') {
+                logTitle("seriessingapurmalaisia", "page_title", 100);
+                logTitle("Malaisia", "page_subtitle_2",100);
+
+            } else {
+                logTitle("seriessingapurmalaysia", "page_title", 100);
+                logTitle("Malaysia", "page_subtitle_2",100);
+
+            }
+            logTitle("Singapur", "page_subtitle", 100);
+            
+
+        }
+    </script>
+
+    <style>
+        /* Custom styles */
+        .modal-content {
+            background-color: transparent;
+            /* Make modal background transparent */
+            border: none;
+            /* Remove border */
+        }
+
+        .modal-body {
+            padding: 0;
+            /* Remove padding to make it full width */
+        }
+    </style>
+
+
+</head>
+
+<body id="series-singapur-malaysia">
+
+
+    <div style="display: flex; align-items: center;margin:10px 20px 0px;">
+        <a href="../index.html">
+            <img src="../imgs/home_icon.png" style="height:20px;"></img>
+        </a>
+        <select id="language-selector">
+            <option value="cat">CAT</option>
+            <option value="es">ARG</option>
+        </select>
+    </div>
+    <div id="page_title" class="page_title" style="position:absolute;right:0;top:10px; font-size: 2em;">
+    </div>
+    <div id="page_subtitle"  style="position:absolute;left:0.4%; font-size: 20px;"></div>
+    <br>
+    <div class="container-fluid mt-1">
+        <div class="row mx-0 g-2">
+            <div class="col-md-3">
+                <div>
+                    <img class="w-100" src="../imgs/singapur/cascada1.JPG"
+                        onclick="openModal('../imgs/singapur/cascada1.JPG','the JEWEL')">
+
+                    <!-- Modal Structure -->
+                    <div id="imageModal" class="modal" onclick="closeModal(event)">
+                        <div class="modal-content">
+                            <img class="modal-image" id="modalImage">
+                            <span class="modal-text" id="modalText"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-1">
+                    <img class="w-100" src="../imgs/singapur/manusito_msb.JPG"
+                        onclick="openModal('../imgs/singapur/manusito_msb.JPG','flasiando con el Marina Sands Bay')">
+
+                    <!-- Modal Structure -->
+                    <div id="imageModal" class="modal" onclick="closeModal(event)">
+                        <div class="modal-content">
+                            <img class="modal-image" id="modalImage">
+                            <span class="modal-text" id="modalText"></span>
+                        </div>
+                    </div>
+                </div>  
+                <div id="carouselMuseoNacionalSP" class="carousel slide mt-1" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item">
+                            <div>
+                                <img class="w-100" src="../imgs/singapur/museo_nacional.JPG"
+                                    onclick="openModal('../imgs/singapur/museo_nacional','Museo Nacional de Singapur desde fuera')">
+
+                                <!-- Modal Structure -->
+                                <div id="imageModal" class="modal" onclick="closeModal(event)">
+                                    <div class="modal-content">
+                                        <img class="modal-image" id="modalImage">
+                                        <span class="modal-text" id="modalText"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item active">
+                            <div>
+                                <img class="w-100" src="../imgs/singapur/museo_nacional_2.JPG"
+                                    onclick="openModal('../imgs/singapur/museo_nacional_2.JPG','Museo Nacional de Singapur desde dentro')">
+
+                                <!-- Modal Structure -->
+                                <div id="imageModal" class="modal" onclick="closeModal(event)">
+                                    <div class="modal-content">
+                                        <img class="modal-image" id="modalImage">
+                                        <span class="modal-text" id="modalText"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselMuseoNacionalSP" role="button" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselMuseoNacionalSP" role="button" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    </a>
+                </div>
+                <div id="carouselSPbuit" class="carousel slide mt-1" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item">
+                            <div>
+                                <img class="w-100" src="../imgs/singapur/singapur_vacio_1.JPG"
+                                    onclick="openModal('../imgs/singapur/singapur_vacio_1','Singapur Vacío')">
+
+                                <!-- Modal Structure -->
+                                <div id="imageModal" class="modal" onclick="closeModal(event)">
+                                    <div class="modal-content">
+                                        <img class="modal-image" id="modalImage">
+                                        <span class="modal-text" id="modalText"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item active">
+                            <div>
+                                <img class="w-100" src="../imgs/singapur/singapur_vacio_2.JPG"
+                                    onclick="openModal('../imgs/singapur/singapur_vacio_2.JPG','Singapur Vacío')">
+
+                                <!-- Modal Structure -->
+                                <div id="imageModal" class="modal" onclick="closeModal(event)">
+                                    <div class="modal-content">
+                                        <img class="modal-image" id="modalImage">
+                                        <span class="modal-text" id="modalText"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item active">
+                            <div>
+                                <img class="w-100" src="../imgs/singapur/singapur_vacio_3.JPG"
+                                    onclick="openModal('../imgs/singapur/singapur_vacio_3.JPG','Singapur Vacío')">
+
+                                <!-- Modal Structure -->
+                                <div id="imageModal" class="modal" onclick="closeModal(event)">
+                                    <div class="modal-content">
+                                        <img class="modal-image" id="modalImage">
+                                        <span class="modal-text" id="modalText"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselSPbuit" role="button" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselSPbuit" role="button" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    </a>
+                </div>
+
+
+            <!-- <div id="page_subtitle_2" class="mt-3 mb-3" style="position:absolute;left:0.4%; font-size: 20px;"></div> -->
+
+
+                
+
+              
+
+                
+            </div>
+            <div class="col-md-3">
+                
+                <div id="carouselBibliotecaNacionalSP" class="carousel slide mt-3" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item">
+                            <div class="mb-1">
+                                <img class="w-100" src="../imgs/singapur/vistas_desde_national_library_1.JPG"
+                                    onclick="openModal('../imgs/singapur/vistas_desde_national_library_1.JPG','Vistas desde las alturas de Singapur')">
+
+                                <!-- Modal Structure -->
+                                <div id="imageModal" class="modal" onclick="closeModal(event)">
+                                    <div class="modal-content">
+                                        <img class="modal-image" id="modalImage">
+                                        <span class="modal-text" id="modalText"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item active">
+                            <div class="mb-1">
+                                <img class="w-100" src="../imgs/singapur/vistas_desde_national_library_2.JPG"
+                                    onclick="openModal('../imgs/singapur/vistas_desde_national_library_2.JPG','Vistas desde las alturas de Singapur')">
+
+                                <!-- Modal Structure -->
+                                <div id="imageModal" class="modal" onclick="closeModal(event)">
+                                    <div class="modal-content">
+                                        <img class="modal-image" id="modalImage">
+                                        <span class="modal-text" id="modalText"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="mb-1">
+                                <img class="w-100" src="../imgs/singapur/vistas_desde_national_library_3.JPG"
+                                    onclick="openModal('../imgs/singapur/vistas_desde_national_library_3.JPG','Vistas desde las alturas de Singapur')">
+
+                                <!-- Modal Structure -->
+                                <div id="imageModal" class="modal" onclick="closeModal(event)">
+                                    <div class="modal-content">
+                                        <img class="modal-image" id="modalImage">
+                                        <span class="modal-text" id="modalText"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselBibliotecaNacionalSP" role="button" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselBibliotecaNacionalSP" role="button" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    </a>
+                </div>
+
+                <div class="accordion mb-1 mt-1" style="padding:0;width:auto; --accordion-bg-color: var(--verdito-color); border-top: 10px solid transparent;
+                border-bottom: 10px solid transparent;">
+                    <p class="accordion-btn" id="ciutat_buida" style="font-size:larger;font-weight: lighter;">
+                    </p>
+                    <div class="accordion-content" style="display: block;">
+                        <p id="ciutat_buida_texto"></p>
+                    </div>
+
+                </div>
+
+                <!-- <div class="mt-1">
+                    <img class="w-100" style="height: 15rem; width: auto;" src="../imgs/singapur/tendederos.JPG"
+                        onclick="openModal('../imgs/singapur/tendederos.JPG','tendederos y aires acondicionados')">
+
+                    <div id="imageModal" class="modal" onclick="closeModal(event)">
+                        <div class="modal-content">
+                            <img class="modal-image" id="modalImage">
+                            <span class="modal-text" id="modalText"></span>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+            <div class="col-md-3">
+                
+
+
+                <div id="carouselOMAbuilding" class="carousel slide mt-1" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="mb-1">
+                                <img class="w-100" src="../imgs/singapur/oma_1.JPG"
+                                    onclick="openModal('../imgs/singapur/oma_1.JPG')">
+
+                                <!-- Modal Structure -->
+                                <div id="imageModal" class="modal" onclick="closeModal(event)">
+                                    <div class="modal-content">
+                                        <img class="modal-image" id="modalImage">
+                                        <span class="modal-text" id="modalText"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="mb-1">
+                                <img class="w-100" src="../imgs/singapur/oma_2.JPG"
+                                    onclick="openModal('../imgs/singapur/oma_2.JPG')">
+
+                                <!-- Modal Structure -->
+                                <div id="imageModal" class="modal" onclick="closeModal(event)">
+                                    <div class="modal-content">
+                                        <img class="modal-image" id="modalImage">
+                                        <span class="modal-text" id="modalText"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="mb-1">
+                                <img class="w-100" src="../imgs/singapur/oma_3.JPG"
+                                    onclick="openModal('../imgs/singapur/oma_3.JPG')">
+
+                                <!-- Modal Structure -->
+                                <div id="imageModal" class="modal" onclick="closeModal(event)">
+                                    <div class="modal-content">
+                                        <img class="modal-image" id="modalImage">
+                                        <span class="modal-text" id="modalText"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="mb-1">
+                                <img class="w-100" src="../imgs/singapur/oma_4.JPG"
+                                    onclick="openModal('../imgs/singapur/oma_4.JPG')">
+
+                                <!-- Modal Structure -->
+                                <div id="imageModal" class="modal" onclick="closeModal(event)">
+                                    <div class="modal-content">
+                                        <img class="modal-image" id="modalImage">
+                                        <span class="modal-text" id="modalText"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselOMAbuilding" role="button" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselOMAbuilding" role="button" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    </a>
+                </div>
+
+                <div>
+                    <img class="w-100" src="../imgs/singapur/msb_dentro.JPG"
+                        onclick="openModal('../imgs/singapur/msb_dentro.JPG','Marina Sands Bay desde dentro')">
+
+                    <!-- Modal Structure -->
+                    <div id="imageModal" class="modal" onclick="closeModal(event)">
+                        <div class="modal-content">
+                            <img class="modal-image" id="modalImage">
+                            <span class="modal-text" id="modalText"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="carouselLittleIndia" class="carousel slide mt-1" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item">
+                            <div class="mb-1">
+                                <img class="w-100" src="../imgs/singapur/little_india_sg.JPG"
+                                    onclick="openModal('../imgs/singapur/little_india_sg','Little India')">
+
+                                <!-- Modal Structure -->
+                                <div id="imageModal" class="modal" onclick="closeModal(event)">
+                                    <div class="modal-content">
+                                        <img class="modal-image" id="modalImage">
+                                        <span class="modal-text" id="modalText"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item active">
+                            <div class="mb-1">
+                                <img class="w-100" src="../imgs/singapur/laurita_little_india.JPG"
+                                    onclick="openModal('../imgs/singapur/laurita_little_india.JPG')">
+
+                                <!-- Modal Structure -->
+                                <div id="imageModal" class="modal" onclick="closeModal(event)">
+                                    <div class="modal-content">
+                                        <img class="modal-image" id="modalImage">
+                                        <span class="modal-text" id="modalText"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselLittleIndia" role="button" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselLittleIndia" role="button" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    </a>
+                </div>
+
+
+            </div>
+            <div class="col-md-3">
+                <div id="carouselJewel" class="carousel slide mt-3" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item">
+                            <div class="mb-1">
+                                <img class="w-100" src="../imgs/singapur/jewel_con_tren.JPG"
+                                    onclick="openModal('../imgs/singapur/jewel_con_tren.JPG')">
+
+                                <!-- Modal Structure -->
+                                <div id="imageModal" class="modal" onclick="closeModal(event)">
+                                    <div class="modal-content">
+                                        <img class="modal-image" id="modalImage">
+                                        <span class="modal-text" id="modalText"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item ">
+                            <div class="mb-1">
+                                <img class="w-100" src="../imgs/singapur/tirandofacha_jewel.JPG"
+                                    onclick="openModal('../imgs/singapur/tirandofacha_jewel.JPG','Tirando facha en the Jewel')">
+
+                                <!-- Modal Structure -->
+                                <div id="imageModal" class="modal" onclick="closeModal(event)">
+                                    <div class="modal-content">
+                                        <img class="modal-image" id="modalImage">
+                                        <span class="modal-text" id="modalText"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item active">
+                            <div class="mb-1">
+                                <img class="w-100" src="../imgs/singapur/laurita_jewel.JPG"
+                                    onclick="openModal('../imgs/singapur/laurita_jewel.JPG','Tirand facha en the Jewel')">
+
+                                <!-- Modal Structure -->
+                                <div id="imageModal" class="modal" onclick="closeModal(event)">
+                                    <div class="modal-content">
+                                        <img class="modal-image" id="modalImage">
+                                        <span class="modal-text" id="modalText"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselJewel" role="button" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselJewel" role="button" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    </a>
+                </div>
+                
+                <div class="mt-1">
+                    <img class="w-100" src="../imgs/singapur/edificio_raro.JPG"
+                        onclick="openModal('../imgs/singapur/edificio_raro.JPG')">
+
+                    <!-- Modal Structure -->
+                    <div id="imageModal" class="modal" onclick="closeModal(event)">
+                        <div class="modal-content">
+                            <img class="modal-image" id="modalImage">
+                            <span class="modal-text" id="modalText"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-1">
+                    <img class="w-100" src="../imgs/singapur/msb.JPG"
+                        onclick="openModal('../imgs/singapur/msb.JPG','el Marina Sands Bay')">
+
+                    <!-- Modal Structure -->
+                    <div id="imageModal" class="modal" onclick="closeModal(event)">
+                        <div class="modal-content">
+                            <img class="modal-image" id="modalImage">
+                            <span class="modal-text" id="modalText"></span>
+                        </div>
+                    </div>
+                </div>
+
+                
+
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="../js/borradoresdeviaje.js"></script>
+
+
+
+</body>
+
+</html>
