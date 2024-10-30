@@ -163,8 +163,12 @@ document.addEventListener('DOMContentLoaded', function() {
     } else if (path.includes('sobre-borradores')) {
         elementsToTranslate = ['borradores_manu','borradores_manu_texto','borradores_laura','borradores_laura_texto'];
         path_to_languages = "../";
-    } else if (path.includes('index') ||  path.includes('/')) {
-        elementsToTranslate = ['about_us'];
+    }else if (path.includes('singapur')) {
+        elementsToTranslate = ['ciutat_buida','ciutat_buida_texto'];
+        path_to_languages = "../";
+    } 
+    else if (path.includes('index') ||  path.includes('/')) {
+        elementsToTranslate = ['about_us','series-sin-mal'];
         path_to_languages = "";
     }
     // Call the function with the elements specific to the page
