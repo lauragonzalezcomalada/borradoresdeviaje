@@ -158,7 +158,7 @@ document.addEventListener('DOMContentLoaded', function() {
         path_to_languages = "../";
 
     } else if (path.includes('indonesia')) {
-        elementsToTranslate = ['donde_me_meti','bali_conocido','donde_me_meti_texto','bali_conocido_texto','why_trust_me_texto'];
+        elementsToTranslate = ['donde_me_meti','bali_conocido','islam_falopa','donde_me_meti_texto','bali_conocido_texto','why_trust_me_texto','islam_falopa_texto'];
         path_to_languages = "../";
     } else if (path.includes('sobre-borradores')) {
         elementsToTranslate = ['borradores_manu','borradores_manu_texto','borradores_laura','borradores_laura_texto'];
