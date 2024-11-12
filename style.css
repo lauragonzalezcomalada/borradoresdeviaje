@@ -4,6 +4,8 @@ body {
     font-weight: 200;
     margin: 0;
     padding: 0;
+    cursor: help;
+    background-color: rgba(255, 255, 255, 0.837);
 }
 
 a {
@@ -61,15 +63,6 @@ footer {
     margin: 10px;
     color: #6f2a02;
 
-}
-
-
-
-
-#sobre-borradores, 
-#series-australia, #series-indonesia  {
-    cursor: help;
-    background-color: rgba(255, 255, 255, 0.837);
 }
 
 /* expandable*/
