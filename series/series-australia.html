@@ -34,7 +34,7 @@
 
   <div class="container-fluid">
     <div class="row mx-0 g-2">
-      <div class="col-md-3">
+      <div id="1" class="col-md-3">
         <div class="accordion mb-1" style="padding:0;width:auto; --accordion-bg-color: var(--rosita-color); border-top: 10px solid transparent;
         border-bottom: 10px solid transparent;">
           <p class="accordion-btn" id="worst_enemy" style="font-size:larger;font-weight: lighter;">
@@ -44,12 +44,173 @@
           </div>
 
         </div>
+         <div>
+          <img class="w-100" src="../imgs/Australia/operaexterior.jpg" onclick="openModal('../imgs/Australia/operaexterior','Opera de Sidney desde la bahía')">
+
+          <!-- Modal Structure -->
+          <div id="imageModal" class="modal" onclick="closeModal(event)">
+
+              <div class="modal-content">
+                <img class="modal-image" id="modalImage">
+                <span class="modal-text" id="modalText"></span>
+              </div>
+          </div>
+        </div>
+        <video class="w-100 mt-1" controls autoplay muted>
+          <source src="../imgs/Australia/Videobondi.mp4" type="video/mp4">
+        </video>
+
       </div>
-      <div class="col-md-3">
-        
+      <div id="2" class="col-md-3">
+        <div class="mt-2">
+          <img class="w-100" src="../imgs/Australia/texturaopera.jpg" onclick="openModal('../imgs/Australia/texturaopera.jpg','Piel de la Opera de Sydney')">
+
+          <!-- Modal Structure -->
+          <div id="imageModal" class="modal" onclick="closeModal(event)">
+
+              <div class="modal-content">
+                <img class="modal-image" id="modalImage">
+                <span class="modal-text" id="modalText"></span>
+              </div>
+          </div>
+        </div>
+        <div id="carouseloperaDentro" class="carousel slide mt-1" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div>
+                <img class="w-100" src="../imgs/Australia/operainterior1.jpg.jpg"
+                  onclick="openModal('../imgs/Australia/operainterior1.jpg.jpg','Opera de Sydney por dentro')">
+
+                <!-- Modal Structure -->
+                <div id="imageModal" class="modal" onclick="closeModal(event)">
+                  <div class="modal-content">
+                    <img class="modal-image" id="modalImage">
+                    <span class="modal-text" id="modalText"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div>
+                <img class="w-100" src="../imgs/Australia/operainterior2.jpg"
+                  onclick="openModal('../imgs/Australia/operainterior2.JPG','Opera de Sydney por dentro')">
+
+                <!-- Modal Structure -->
+                <div id="imageModal" class="modal" onclick="closeModal(event)">
+                  <div class="modal-content">
+                    <img class="modal-image" id="modalImage">
+                    <span class="modal-text" id="modalText"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          
+          </div>
+          <a class="carousel-control-prev" href="#carouseloperaDentro" role="button" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          </a>
+          <a class="carousel-control-next" href="#carouseloperaDentro" role="button" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          </a>
+        </div>
+        <div class="mt-1">
+          <img class="w-100" src="../imgs/Australia/Chickenparmi.jpg" onclick="openModal('../imgs/Australia/Chickenparmi.jpg','Chicken Parmi un clásico de los martes en Manly')">
+
+          <!-- Modal Structure -->
+          <div id="imageModal" class="modal" onclick="closeModal(event)">
+
+              <div class="modal-content">
+                <img class="modal-image" id="modalImage">
+                <span class="modal-text" id="modalText"></span>
+              </div>
+          </div>
+        </div>
+
+
       </div>
-      <div class="col-md-3">
-        <div class="accordion mb-1" style="padding:0;width:auto; --accordion-bg-color: var(--amarillo-color); border-top: 10px solid transparent;
+      <div id="3" class="col-md-3">
+        <div id="carouselcity" class="carousel slide mt-1" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div>
+                <img class="w-100" src="../imgs/Australia/City1.jpg"
+                  onclick="openModal('../imgs/Australia/City1.jpg','La city de Sydney')">
+
+                <!-- Modal Structure -->
+                <div id="imageModal" class="modal" onclick="closeModal(event)">
+                  <div class="modal-content">
+                    <img class="modal-image" id="modalImage">
+                    <span class="modal-text" id="modalText"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div>
+                <img class="w-100" src="../imgs/Australia/City2.jpg"
+                  onclick="openModal('../imgs/Australia/City2.jpg','La city de Sydney')">
+
+                <!-- Modal Structure -->
+                <div id="imageModal" class="modal" onclick="closeModal(event)">
+                  <div class="modal-content">
+                    <img class="modal-image" id="modalImage">
+                    <span class="modal-text" id="modalText"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div>
+                <img class="w-100" src="../imgs/Australia/City3.jpg"
+                  onclick="openModal('../imgs/Australia/City3.jpg','La city de Sydney')">
+
+                <!-- Modal Structure -->
+                <div id="imageModal" class="modal" onclick="closeModal(event)">
+                  <div class="modal-content">
+                    <img class="modal-image" id="modalImage">
+                    <span class="modal-text" id="modalText"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item active">
+              <div>
+                <img class="w-100" src="../imgs/Australia/City4.jpg"
+                  onclick="openModal('../imgs/Australia/City4.jpg','La city de Sydney')">
+
+                <!-- Modal Structure -->
+                <div id="imageModal" class="modal" onclick="closeModal(event)">
+                  <div class="modal-content">
+                    <img class="modal-image" id="modalImage">
+                    <span class="modal-text" id="modalText"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          
+          </div>
+          <a class="carousel-control-prev" href="#carouselcity" role="button" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          </a>
+          <a class="carousel-control-next" href="#carouselcity" role="button" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          </a>
+        </div>
+
+        <div class="mt-1">
+          <img class="w-100" src="../imgs/Australia/threesisters.jpg" onclick="openModal('../imgs/Australia/threesisters.jpg','Three sisters')">
+
+          <!-- Modal Structure -->
+          <div id="imageModal" class="modal" onclick="closeModal(event)">
+
+              <div class="modal-content">
+                <img class="modal-image" id="modalImage">
+                <span class="modal-text" id="modalText"></span>
+              </div>
+          </div>
+        </div>
+
+        <div class="accordion mt-1" style="padding:0;width:auto; --accordion-bg-color: var(--amarillo-color); border-top: 10px solid transparent;
         border-bottom: 10px solid transparent;">
           <p class="accordion-btn" id="culturally_narrow" style="font-size:larger;font-weight: lighter;">
           </p>
@@ -58,9 +219,24 @@
           </div>
 
         </div>
+        <div class="mt-1">
+          <img class="w-100" src="../imgs/Australia/tortadecumple.jpg" onclick="openModal('../imgs/Australia/tortadecumplejpg','Torta de cumple en Australia')">
+
+          <!-- Modal Structure -->
+          <div id="imageModal" class="modal" onclick="closeModal(event)">
+
+              <div class="modal-content">
+                <img class="modal-image" id="modalImage">
+                <span class="modal-text" id="modalText"></span>
+              </div>
+          </div>
+        </div>
 
       </div>
-      <div class="col-md-3">
+      <div id="4" class="col-md-3">
+        <video class="w-100 mt-4" controls autoplay muted>
+          <source src="../imgs/Australia/videoopera.mp4" type="video/mp4">
+        </video>
         <div class="accordion mb-1" style="padding:0;width:auto; --accordion-bg-color: var(--verdito-color); border-top: 10px solid transparent;
         border-bottom: 10px solid transparent;">
           <p class="accordion-btn" id="perfect_australia" style="font-size:larger;font-weight: lighter;">
@@ -70,14 +246,109 @@
           </div>
 
         </div>
+        <div class="mt-1">
+          <img class="w-100" src="../imgs/Australia/sobreasada.jpg" onclick="openModal('../imgs/Australia/sobreasadajpg','Sobrasada, delicia catalana.')">
+
+          <!-- Modal Structure -->
+          <div id="imageModal" class="modal" onclick="closeModal(event)">
+
+              <div class="modal-content">
+                <img class="modal-image" id="modalImage">
+                <span class="modal-text" id="modalText"></span>
+              </div>
+          </div>
+        </div>
+        <div id="carouselfrutaperfecta" class="carousel slide mt-1" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div>
+                <img class="w-100" src="../imgs/Australia/frutaperfecta.jpg"
+                  onclick="openModal('../imgs/Australia/frutaperfecta.jpg','Frutas y verduras en los supermercados')">
+
+                <!-- Modal Structure -->
+                <div id="imageModal" class="modal" onclick="closeModal(event)">
+                  <div class="modal-content">
+                    <img class="modal-image" id="modalImage">
+                    <span class="modal-text" id="modalText"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div>
+                <img class="w-100" src="../imgs/Australia/frutaperfecta2.jpg"
+                  onclick="openModal('../imgs/Australia/frutaperfecta2.jpg','Frutas y verduras en los supermercados')">
+
+                <!-- Modal Structure -->
+                <div id="imageModal" class="modal" onclick="closeModal(event)">
+                  <div class="modal-content">
+                    <img class="modal-image" id="modalImage">
+                    <span class="modal-text" id="modalText"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div>
+                <img class="w-100" src="../imgs/Australia/frutaperfecta3.jpg"
+                  onclick="openModal('../imgs/Australia/frutaperfecta3.jpg','Frutas y verduras en los supermercados')">
+
+                <!-- Modal Structure -->
+                <div id="imageModal" class="modal" onclick="closeModal(event)">
+                  <div class="modal-content">
+                    <img class="modal-image" id="modalImage">
+                    <span class="modal-text" id="modalText"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div>
+                <img class="w-100" src="../imgs/Australia/frutaperfecta4.jpg"
+                  onclick="openModal('../imgs/Australia/frutaperfecta4.jpg','Frutas y verduras en los supermercados')">
+
+                <!-- Modal Structure -->
+                <div id="imageModal" class="modal" onclick="closeModal(event)">
+                  <div class="modal-content">
+                    <img class="modal-image" id="modalImage">
+                    <span class="modal-text" id="modalText"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div>
+                <img class="w-100" src="../imgs/Australia/frutaperfecta5.jpg"
+                  onclick="openModal('../imgs/Australia/frutaperfecta5.jpg','Frutas y verduras en los supermercados')">
+
+                <!-- Modal Structure -->
+                <div id="imageModal" class="modal" onclick="closeModal(event)">
+                  <div class="modal-content">
+                    <img class="modal-image" id="modalImage">
+                    <span class="modal-text" id="modalText"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          
+          </div>
+          <a class="carousel-control-prev" href="#carouselfrutaperfecta" role="button" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          </a>
+          <a class="carousel-control-next" href="#carouselfrutaperfecta" role="button" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          </a>
+        </div>
+        
+
       </div>
 
-  </div>
+    </div>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-    crossorigin="anonymous"></script>
-  <script src="../js/borradoresdeviaje.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"></script>
+    <script src="../js/borradoresdeviaje.js"></script>
 </body>
 
 </html>
