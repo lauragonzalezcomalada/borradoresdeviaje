@@ -16,15 +16,15 @@
         window.onload = function () {
             if (document.getElementById('language-selector').value === 'cat') {
                 logTitle("seriessingapurmalaisia", "page_title", 100);
-                logTitle("Malaisia", "page_subtitle_2",100);
+                // logTitle("Malaisia", "page_subtitle_2",100);
 
             } else {
                 logTitle("seriessingapurmalaysia", "page_title", 100);
-                logTitle("Malaysia", "page_subtitle_2",100);
+                // logTitle("Malaysia", "page_subtitle_2",100);
 
             }
-            logTitle("Singapur", "page_subtitle", 100);
-            
+            // logTitle("Singapur", "page_subtitle", 100);
+
 
         }
     </script>
@@ -61,8 +61,6 @@
     </div>
     <div id="page_title" class="page_title" style="position:absolute;right:0;top:10px; font-size: 2em;">
     </div>
-    <div id="page_subtitle"  style="position:absolute;left:0.4%; font-size: 20px;"></div>
-    <br>
     <div class="container-fluid mt-1">
         <div class="row mx-0 g-2">
             <div class="col-md-3">
@@ -89,7 +87,7 @@
                             <span class="modal-text" id="modalText"></span>
                         </div>
                     </div>
-                </div>  
+                </div>
                 <div id="carouselMuseoNacionalSP" class="carousel slide mt-1" data-bs-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item">
@@ -182,17 +180,17 @@
                 </div>
 
 
-            <!-- <div id="page_subtitle_2" class="mt-3 mb-3" style="position:absolute;left:0.4%; font-size: 20px;"></div> -->
+                <!-- <div id="page_subtitle_2" class="mt-3 mb-3" style="position:absolute;left:0.4%; font-size: 20px;"></div> -->
 
 
-                
 
-              
 
-                
+
+
+
             </div>
             <div class="col-md-3">
-                
+
                 <div id="carouselBibliotecaNacionalSP" class="carousel slide mt-3" data-bs-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item">
@@ -238,10 +236,12 @@
                             </div>
                         </div>
                     </div>
-                    <a class="carousel-control-prev" href="#carouselBibliotecaNacionalSP" role="button" data-bs-slide="prev">
+                    <a class="carousel-control-prev" href="#carouselBibliotecaNacionalSP" role="button"
+                        data-bs-slide="prev">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                     </a>
-                    <a class="carousel-control-next" href="#carouselBibliotecaNacionalSP" role="button" data-bs-slide="next">
+                    <a class="carousel-control-next" href="#carouselBibliotecaNacionalSP" role="button"
+                        data-bs-slide="next">
                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     </a>
                 </div>
@@ -255,21 +255,9 @@
                     </div>
 
                 </div>
-
-                <!-- <div class="mt-1">
-                    <img class="w-100" style="height: 15rem; width: auto;" src="../imgs/singapur/tendederos.JPG"
-                        onclick="openModal('../imgs/singapur/tendederos.JPG','tendederos y aires acondicionados')">
-
-                    <div id="imageModal" class="modal" onclick="closeModal(event)">
-                        <div class="modal-content">
-                            <img class="modal-image" id="modalImage">
-                            <span class="modal-text" id="modalText"></span>
-                        </div>
-                    </div>
-                </div> -->
             </div>
             <div class="col-md-3">
-                
+
 
 
                 <div id="carouselOMAbuilding" class="carousel slide mt-1" data-bs-ride="carousel">
@@ -345,10 +333,11 @@
 
                     <!-- Modal Structure -->
                     <div id="imageModal" class="modal" onclick="closeModal(event)">
-                        <div class="modal-content">
-                            <img class="modal-image" id="modalImage">
+                            <img id="modal-content" class="modal-content" style="
+                            max-height: 90vh !important;
+                            width: auto;
+                            height: auto;">
                             <span class="modal-text" id="modalText"></span>
-                        </div>
                     </div>
                 </div>
 
@@ -446,7 +435,7 @@
                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     </a>
                 </div>
-                
+
                 <div class="mt-1">
                     <img class="w-100" src="../imgs/singapur/edificio_raro.JPG"
                         onclick="openModal('../imgs/singapur/edificio_raro.JPG')">
@@ -472,7 +461,7 @@
                     </div>
                 </div>
 
-                
+
 
             </div>
         </div>

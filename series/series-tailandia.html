@@ -21,21 +21,20 @@
 </head>
 
 <body id="series-tailandia">
-
-    <div style="display: flex; align-items: center;margin:10px 20px;">
-        <a href="../index.html">
-            <img src="../imgs/home_icon.png" style="height:20px;"></img>
-        </a>
-        <select id="language-selector">
-            <option value="cat">CAT</option>
-            <option value="es">ARG</option>
-        </select>
+    <div>
+        <div style="display: flex; align-items: center;margin:10px 20px;">
+            <a href="../index.html">
+                <img src="../imgs/home_icon.png" style="height:20px;"></img>
+            </a>
+            <select id="language-selector">
+                <option value="cat">CAT</option>
+                <option value="es">ARG</option>
+            </select>
+        </div>
+        <div id="page_title" class="page_title" style="position:absolute;right:0;top:10px; font-size: 2em;">
+        </div>
     </div>
-    <div id="page_title" class="page_title" style="position:absolute;right:0;top:10px; font-size: 2em;">
-    </div>
-
     <div id="page_subtitle" style="position:absolute;left:0.4%; font-size: 20px;"></div>
-
     <br>
     <div class="container-fluid">
         <div class="row mx-0 g-2">
@@ -47,7 +46,7 @@
                     <!-- Modal Structure -->
                     <div id="imageModal" class="modal" onclick="closeModal(event)">
                         <img class="modal-content" id="modalImage">
-                        <span class="modal-text" id="modalText" style="color: black;"></span>
+                        <span class="modal-text" id="modalText"></span>
 
                     </div>
                 </div>
@@ -141,7 +140,7 @@
                     <!-- Modal Structure -->
                     <div id="imageModal" class="modal" onclick="closeModal(event)">
                         <img class="modal-content" id="modalImage">
-                        <span class="modal-text" id="modalText" style="color: black;"></span>
+                        <span class="modal-text" id="modalText"></span>
 
                     </div>
                 </div>
@@ -207,7 +206,7 @@
                     <!-- Modal Structure -->
                     <div id="imageModal" class="modal" onclick="closeModal(event)">
                         <img class="modal-content" id="modalImage">
-                        <span class="modal-text" id="modalText" style="color: black;"></span>
+                        <span class="modal-text" id="modalText"></span>
 
                     </div>
                 </div>
@@ -283,12 +282,15 @@
                 </div>
                 <div>
                     <img class="w-100" src="../imgs/tailandia/runasdeayutthaya.jpeg"
-                        onclick="openModal('../imgs/tailandia/runasdeayutthaya.jpeg')">
+                        onclick="openModal('../imgs/tailandia/runasdeayutthaya.jpeg','ruinas de ayutthaya')">
 
                     <!-- Modal Structure -->
                     <div id="imageModal" class="modal" onclick="closeModal(event)">
-                        <img class="modal-content" id="modalImage">
-                        <span class="modal-text" id="modalText" style="color: black;"></span>
+                        <div class="modal-content">
+                            <img class="modal-image" id="modalImage">
+                            <span class="modal-text" id="modalText"></span>
+
+                        </div>
 
                     </div>
                 </div>
@@ -303,8 +305,7 @@
                     <!-- Modal Structure -->
                     <div id="imageModal" class="modal" onclick="closeModal(event)">
                         <img class="modal-content" id="modalImage">
-                        <span class="modal-text" id="modalText" style="color: black;"></span>
-
+                        <span class="modal-text" id="modalText"></span>
                     </div>
                 </div>
                 <div id="carousel-monk" class="carousel slide mt-1" data-bs-ride="carousel">
@@ -356,7 +357,7 @@
                     <!-- Modal Structure -->
                     <div id="imageModal" class="modal" onclick="closeModal(event)">
                         <img class="modal-content" id="modalImage">
-                        <span class="modal-text" id="modalText" style="color: black;"></span>
+                        <span class="modal-text" id="modalText"></span>
 
                     </div>
                 </div>
@@ -423,7 +424,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="carousel-item active">
+                        <div class="carousel-item">
                             <div class="mb-1">
                                 <img class="w-100" src="../imgs/tailandia/gentebangkok4.jpeg"
                                     onclick="openModal('../imgs/tailandia/gentebangkok4.jpeg','gente de bangkok')">
@@ -455,7 +456,7 @@
                     <!-- Modal Structure -->
                     <div id="imageModal" class="modal" onclick="closeModal(event)">
                         <img class="modal-content" id="modalImage">
-                        <span class="modal-text" id="modalText" style="color: black;"></span>
+                        <span class="modal-text" id="modalText"></span>
 
                     </div>
                 </div>
@@ -467,7 +468,7 @@
                     <!-- Modal Structure -->
                     <div id="imageModal" class="modal" onclick="closeModal(event)">
                         <img class="modal-content" id="modalImage">
-                        <span class="modal-text" id="modalText" style="color: black;"></span>
+                        <span class="modal-text" id="modalText"></span>
 
                     </div>
                 </div>
@@ -602,7 +603,7 @@
                     <!-- Modal Structure -->
                     <div id="imageModal" class="modal" onclick="closeModal(event)">
                         <img class="modal-content" id="modalImage">
-                        <span class="modal-text" id="modalText" style="color: black;"></span>
+                        <span class="modal-text" id="modalText"></span>
 
                     </div>
                 </div>
@@ -613,7 +614,7 @@
                     <!-- Modal Structure -->
                     <div id="imageModal" class="modal" onclick="closeModal(event)">
                         <img class="modal-content" id="modalImage">
-                        <span class="modal-text" id="modalText" style="color: black;"></span>
+                        <span class="modal-text" id="modalText"></span>
 
                     </div>
                 </div>
@@ -668,7 +669,7 @@
                     <!-- Modal Structure -->
                     <div id="imageModal" class="modal" onclick="closeModal(event)">
                         <img class="modal-content" id="modalImage">
-                        <span class="modal-text" id="modalText" style="color: black;"></span>
+                        <span class="modal-text" id="modalText"></span>
 
                     </div>
                 </div>
@@ -680,7 +681,7 @@
                     <!-- Modal Structure -->
                     <div id="imageModal" class="modal" onclick="closeModal(event)">
                         <img class="modal-content" id="modalImage">
-                        <span class="modal-text" id="modalText" style="color: black;"></span>
+                        <span class="modal-text" id="modalText"></span>
 
                     </div>
                 </div>
@@ -691,7 +692,7 @@
                     <!-- Modal Structure -->
                     <div id="imageModal" class="modal" onclick="closeModal(event)">
                         <img class="modal-content" id="modalImage">
-                        <span class="modal-text" id="modalText" style="color: black;"></span>
+                        <span class="modal-text" id="modalText"></span>
 
                     </div>
                 </div>
@@ -702,7 +703,7 @@
                     <!-- Modal Structure -->
                     <div id="imageModal" class="modal" onclick="closeModal(event)">
                         <img class="modal-content" id="modalImage">
-                        <span class="modal-text" id="modalText" style="color: black;"></span>
+                        <span class="modal-text" id="modalText"></span>
 
                     </div>
                 </div>
@@ -713,7 +714,7 @@
                     <!-- Modal Structure -->
                     <div id="imageModal" class="modal" onclick="closeModal(event)">
                         <img class="modal-content" id="modalImage">
-                        <span class="modal-text" id="modalText" style="color: black;"></span>
+                        <span class="modal-text" id="modalText"></span>
 
                     </div>
                 </div>
@@ -855,7 +856,7 @@
                     <!-- Modal Structure -->
                     <div id="imageModal" class="modal" onclick="closeModal(event)">
                         <img class="modal-content" id="modalImage">
-                        <span class="modal-text" id="modalText" style="color: black;"></span>
+                        <span class="modal-text" id="modalText"></span>
 
                     </div>
                 </div>
@@ -950,7 +951,7 @@
                     <!-- Modal Structure -->
                     <div id="imageModal" class="modal" onclick="closeModal(event)">
                         <img class="modal-content" id="modalImage">
-                        <span class="modal-text" id="modalText" style="color: black;"></span>
+                        <span class="modal-text" id="modalText"></span>
 
                     </div>
                 </div>
@@ -1003,7 +1004,7 @@
                     <!-- Modal Structure -->
                     <div id="imageModal" class="modal" onclick="closeModal(event)">
                         <img class="modal-content" id="modalImage">
-                        <span class="modal-text" id="modalText" style="color: black;"></span>
+                        <span class="modal-text" id="modalText"></span>
 
                     </div>
                 </div>
@@ -1014,13 +1015,13 @@
                     <!-- Modal Structure -->
                     <div id="imageModal" class="modal" onclick="closeModal(event)">
                         <img class="modal-content" id="modalImage">
-                        <span class="modal-text" id="modalText" style="color: black;"></span>
+                        <span class="modal-text" id="modalText"></span>
 
                     </div>
                 </div>
                 <video class="w-100 mt-1" controls autoplay muted>
                     <source src="../imgs/tailandia/videocastellers.mp4" type="video/mp4">
-                  </video>
+                </video>
 
             </div>
         </div>
