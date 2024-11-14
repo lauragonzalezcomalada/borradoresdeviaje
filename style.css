@@ -69,12 +69,12 @@ footer {
 }
 
 
-#page_subtitle {
+/*#page_subtitle {
     position: relative;
     top: 20%;
     font-size: 20px;
-    z-index: 1001; /* Higher than the header to appear on top */
-}
+    z-index: 1001; 
+}*/
 
 /* expandable*/
 .accordion {
@@ -118,7 +118,6 @@ footer {
     z-index: 1000;
     left: 0;
     top: 0;
-    width: 100%;
     background-color: rgba(255, 255, 255, 0.4);     /* Semi-transparent background */
     justify-content: center;
     align-items: center;
@@ -137,7 +136,7 @@ footer {
 .modal-content {
     position: relative;
     max-width: 80%;
-    max-height: 90vh;
+    max-height: 90vh !important;
     width: auto;
     height: auto;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
