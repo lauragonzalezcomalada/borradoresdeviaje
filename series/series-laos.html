@@ -1,0 +1,875 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../styles/colors.css">
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        window.onload = function () {
+            logTitle("serieslaos", "page_title", 100);
+            logTitle("slowboat de Huay Xai a Luang Prabang", "page_subtitle", 100);
+            logTitle("Luang Prabang, el loop hasta Nong Khiaw, el Thakek Loop y el Pakse loop", "page_subtitle2", 100);
+
+        }
+    </script>
+</head>
+
+<body id="series-australia">
+
+    <div style="display: flex; align-items: center;margin:10px 20px;">
+        <a href="../index.html">
+            <img src="../imgs/home_icon.png" style="height:20px;"></img>
+        </a>
+        <select id="language-selector">
+            <option value="cat">CAT</option>
+            <option value="es">ARG</option>
+        </select>
+    </div>
+    <div id="page_title" class="page_title" style="position:absolute;right:0;top:10px; font-size: 2em;">
+    </div>
+    <div style="position:absolute;right:0;top:50px; font-size: 1em;">
+        <p>laos es paisajes, son los loops, es el meterte dentro de las casas de la gente</p>
+    </div>
+    <div id="page_subtitle" style="position:absolute;left:5px;top:50px; font-size: 1em;">
+    </div>
+
+    <div class="container-fluid mt-4">
+        <div class="row mx-0 g-2">
+            <div id="1" class="col-md-3">
+
+                <div>
+                    <img class="w-100" src="../imgs/laos/vistasslowboat.jpeg"
+                        onclick="openModal('../imgs/laos/vistasslowboat.jpeg')">
+
+                    <!-- Modal Structure -->
+                    <div id="imageModal" class="modal" onclick="closeModal(event)">
+                        <div class="modal-content">
+                            <img class="modal-image" id="modalImage">
+                            <span class="modal-text" id="modalText"></span>
+                        </div>
+                    </div>
+                </div>
+                <div id="carousel-pueblomekong" class="carousel slide mt-1" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="mb-1">
+                                <img class="w-100" src="../imgs/laos/pueblomekong1.jpeg"
+                                    onclick="openModal('../imgs/laos/pueblomekong1.jpeg','pueblo a las orillas del Mekong')">
+
+                                <!-- Modal Structure -->
+                                <div id="imageModal" class="modal" onclick="closeModal(event)">
+
+                                    <div class="modal-content">
+                                        <img class="modal-image" id="modalImage">
+                                        <span class="modal-text" id="modalText"></span>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="mb-1">
+                                <img class="w-100" src="../imgs/laos/pueblomekong2.jpeg"
+                                    onclick="openModal('../imgs/laos/pueblomekong2.jpeg','pueblo a las orillas del Mekong')">
+
+                                <!-- Modal Structure -->
+                                <div id="imageModal" class="modal" onclick="closeModal(event)">
+                                    <div class="modal-content">
+                                        <img class="modal-image" id="modalImage">
+                                        <span class="modal-text" id="modalText"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carousel-pueblomekong" role="button" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#carousel-pueblomekong" role="button" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    </a>
+                </div>
+
+                <div>
+                    <img class="w-100" src="../imgs/laos/nenaladera.jpeg"
+                        onclick="openModal('../imgs/laos/nenaladera.jpeg')">
+
+
+                    <div id="imageModal" class="modal" onclick="closeModal(event)">
+                        <div class="modal-content">
+                            <img class="modal-image" id="modalImage">
+                            <span class="modal-text" id="modalText"></span>
+                        </div>
+                    </div>
+                </div>
+                <div id="carousel-nenespulseras" class="carousel slide mt-1" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div>
+                                <img class="w-100" src="../imgs/laos/instantaneasslowboat2.jpeg"
+                                    onclick="openModal('../imgs/laos/instantaneasslowboat2.jpeg','niñas y niños vendiendo pulseras subidos al bote')">
+
+                                <!-- Modal Structure -->
+                                <div id="imageModal" class="modal" onclick="closeModal(event)">
+
+                                    <div class="modal-content">
+                                        <img class="modal-image" id="modalImage">
+                                        <span class="modal-text" id="modalText"></span>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div>
+                                <img class="w-100" src="../imgs/laos/nenesvendiendopulseras.jpeg"
+                                    onclick="openModal('../imgs/laos/nenesvendiendopulseras.jpeg','niñas y niños vendiendo pulseras subidos al bote')">
+
+                                <!-- Modal Structure -->
+                                <div id="imageModal" class="modal" onclick="closeModal(event)">
+                                    <div class="modal-content">
+                                        <img class="modal-image" id="modalImage">
+                                        <span class="modal-text" id="modalText"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carousel-nenespulseras" role="button" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#carousel-nenespulseras" role="button" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    </a>
+                </div>
+
+                <div id="carousel-mujerllorando" class="carousel slide mt-1" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="mb-1">
+                                <img class="w-100" src="../imgs/laos/mujerllorando1.jpeg"
+                                    onclick="openModal('../imgs/laos/mujerllorando1.jpeg')">
+
+                                <!-- Modal Structure -->
+                                <div id="imageModal" class="modal" onclick="closeModal(event)">
+
+                                    <div class="modal-content">
+                                        <img class="modal-image" id="modalImage">
+                                        <span class="modal-text" id="modalText"></span>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="mb-1">
+                                <img class="w-100" src="../imgs/laos/mujerllorando2.jpeg"
+                                    onclick="openModal('../imgs/laos/mujerllorando2.jpeg')">
+
+                                <!-- Modal Structure -->
+                                <div id="imageModal" class="modal" onclick="closeModal(event)">
+                                    <div class="modal-content">
+                                        <img class="modal-image" id="modalImage">
+                                        <span class="modal-text" id="modalText"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="mb-1">
+                                <img class="w-100" src="../imgs/laos/mujerllorando3.jpeg"
+                                    onclick="openModal('../imgs/laos/mujerllorando3.jpeg')">
+
+                                <!-- Modal Structure -->
+                                <div id="imageModal" class="modal" onclick="closeModal(event)">
+                                    <div class="modal-content">
+                                        <img class="modal-image" id="modalImage">
+                                        <span class="modal-text" id="modalText"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carousel-mujerllorando" role="button" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#carousel-mujerllorando" role="button" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    </a>
+                </div>
+
+
+            </div>
+            <div id="2" class="col-md-3">
+                <div id="carousel-sailingmekong" class="carousel slide mt-1" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="mb-1">
+                                <img class="w-100" src="../imgs/laos/sailingmekong1.jpeg"
+                                    onclick="openModal('../imgs/laos/sailingmekong1.jpeg','sailing the Mekong')">
+
+                                <!-- Modal Structure -->
+                                <div id="imageModal" class="modal" onclick="closeModal(event)">
+
+                                    <div class="modal-content">
+                                        <img class="modal-image" id="modalImage">
+                                        <span class="modal-text" id="modalText"></span>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="mb-1">
+                                <img class="w-100" src="../imgs/laos/sailingmekong2.jpeg"
+                                    onclick="openModal('../imgs/laos/sailingmekong2.jpeg','sailing the Mekong')">
+
+                                <!-- Modal Structure -->
+                                <div id="imageModal" class="modal" onclick="closeModal(event)">
+                                    <div class="modal-content">
+                                        <img class="modal-image" id="modalImage">
+                                        <span class="modal-text" id="modalText"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carousel-sailingmekong" role="button" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#carousel-sailingmekong" role="button" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    </a>
+                </div>
+                <div>
+                    <img class="w-100" src="../imgs/laos/elcapitan.jpeg"
+                        onclick="openModal('../imgs/laos/elcapitan.jpeg','El capitan del slowboat')">
+
+                    <!-- Modal Structure -->
+                    <div id="imageModal" class="modal" onclick="closeModal(event)">
+                        <div class="modal-content">
+                            <img class="modal-image" id="modalImage">
+                            <span class="modal-text" id="modalText"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-1">
+                    <img class="w-100" src="../imgs/laos/mujeresmekong.jpeg"
+                        onclick="openModal('../imgs/laos/mujeresmekong.jpeg','Dos mujeres y una niña que se bajaron en el medio de la ruta')">
+
+                    <!-- Modal Structure -->
+                    <div id="imageModal" class="modal" onclick="closeModal(event)">
+                        <div class="modal-content">
+                            <img class="modal-image" id="modalImage">
+                            <span class="modal-text" id="modalText"></span>
+                        </div>
+                    </div>
+                </div>
+                <div id="carousel-secuencianiñosrio" class="carousel slide mt-1" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="mb-1">
+                                <img class="w-100" src="../imgs/laos/sec1.jpeg"
+                                    onclick="openModal('../imgs/laos/sec1.jpeg')">
+
+                                <!-- Modal Structure -->
+                                <div id="imageModal" class="modal" onclick="closeModal(event)">
+
+                                    <div class="modal-content">
+                                        <img class="modal-image" id="modalImage">
+                                        <span class="modal-text" id="modalText"></span>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="mb-1">
+                                <img class="w-100" src="../imgs/laos/sec2.jpeg"
+                                    onclick="openModal('../imgs/laos/sec2.jpeg')">
+
+                                <!-- Modal Structure -->
+                                <div id="imageModal" class="modal" onclick="closeModal(event)">
+                                    <div class="modal-content">
+                                        <img class="modal-image" id="modalImage">
+                                        <span class="modal-text" id="modalText"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="mb-1">
+                                <img class="w-100" src="../imgs/laos/sec3.jpeg"
+                                    onclick="openModal('../imgs/laos/sec3.jpeg')">
+
+                                <!-- Modal Structure -->
+                                <div id="imageModal" class="modal" onclick="closeModal(event)">
+                                    <div class="modal-content">
+                                        <img class="modal-image" id="modalImage">
+                                        <span class="modal-text" id="modalText"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="mb-1">
+                                <img class="w-100" src="../imgs/laos/sec4.jpeg"
+                                    onclick="openModal('../imgs/laos/sec4.jpeg')">
+
+                                <!-- Modal Structure -->
+                                <div id="imageModal" class="modal" onclick="closeModal(event)">
+                                    <div class="modal-content">
+                                        <img class="modal-image" id="modalImage">
+                                        <span class="modal-text" id="modalText"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="mb-1">
+                                <img class="w-100" src="../imgs/laos/sec5.jpeg"
+                                    onclick="openModal('../imgs/laos/sec5.jpeg')">
+
+                                <!-- Modal Structure -->
+                                <div id="imageModal" class="modal" onclick="closeModal(event)">
+                                    <div class="modal-content">
+                                        <img class="modal-image" id="modalImage">
+                                        <span class="modal-text" id="modalText"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="mb-1">
+                                <img class="w-100" src="../imgs/laos/sec6.jpeg"
+                                    onclick="openModal('../imgs/laos/sec6.jpeg')">
+
+                                <!-- Modal Structure -->
+                                <div id="imageModal" class="modal" onclick="closeModal(event)">
+                                    <div class="modal-content">
+                                        <img class="modal-image" id="modalImage">
+                                        <span class="modal-text" id="modalText"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <a class="carousel-control-prev" href="#carousel-secuencianiñosrio" role="button"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#carousel-secuencianiñosrio" role="button"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    </a>
+                </div>
+                <div>
+                    <img class="w-100" src="../imgs/laos/mujereresperrobebe.jpeg"
+                        onclick="openModal('../imgs/laos/mujereresperrobebe.jpeg')">
+
+                    <!-- Modal Structure -->
+                    <div id="imageModal" class="modal" onclick="closeModal(event)">
+                        <div class="modal-content">
+                            <img class="modal-image" id="modalImage">
+                            <span class="modal-text" id="modalText"></span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div id="3" class="col-md-3">
+                <div>
+                    <img class="w-100" src="../imgs/laos/spotmanuu.jpeg"
+                        onclick="openModal('../imgs/laos/spotmanuu.jpeg','encuentren a Manu')">
+
+                    <!-- Modal Structure -->
+                    <div id="imageModal" class="modal" onclick="closeModal(event)">
+                        <div class="modal-content">
+                            <img class="modal-image" id="modalImage">
+                            <span class="modal-text" id="modalText"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-1">
+                    <img class="w-100" src="../imgs/laos/instantaneamujerninioslowboat.jpeg"
+                        onclick="openModal('../imgs/laos/instantaneamujerninioslowboat.jpeg')">
+
+                    <!-- Modal Structure -->
+                    <div id="imageModal" class="modal" onclick="closeModal(event)">
+                        <div class="modal-content">
+                            <img class="modal-image" id="modalImage">
+                            <span class="modal-text" id="modalText"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="carousel-mujerybebe" class="carousel slide mt-1" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div>
+                                <img class="w-100" src="../imgs/laos/lamujeryelbebe.jpeg"
+                                    onclick="openModal('../imgs/laos/lamujeryelbebe.jpeg')">
+
+                                <!-- Modal Structure -->
+                                <div id="imageModal" class="modal" onclick="closeModal(event)">
+
+                                    <div class="modal-content">
+                                        <img class="modal-image" id="modalImage">
+                                        <span class="modal-text" id="modalText"></span>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div>
+                                <img class="w-100" src="../imgs/laos/mujerybebedelado.jpeg"
+                                    onclick="openModal('../imgs/laos/mujerybebedelado.jpeg')">
+
+                                <!-- Modal Structure -->
+                                <div id="imageModal" class="modal" onclick="closeModal(event)">
+                                    <div class="modal-content">
+                                        <img class="modal-image" id="modalImage">
+                                        <span class="modal-text" id="modalText"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div>
+                                <img class="w-100" src="../imgs/laos/lamujer.jpeg"
+                                    onclick="openModal('../imgs/laos/lamujer.jpeg')">
+
+                                <!-- Modal Structure -->
+                                <div id="imageModal" class="modal" onclick="closeModal(event)">
+                                    <div class="modal-content">
+                                        <img class="modal-image" id="modalImage">
+                                        <span class="modal-text" id="modalText"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carousel-mujerybebe" role="button" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#carousel-mujerybebe" role="button" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    </a>
+                </div>
+                <div class="mt-1">
+                    <img class="w-100" src="../imgs/laos/señorarenario.jpeg"
+                        onclick="openModal('../imgs/laos/señorarenario.jpeg','donde se confunden la arena y el agua')">
+
+                    <!-- Modal Structure -->
+                    <div id="imageModal" class="modal" onclick="closeModal(event)">
+                        <div class="modal-content">
+                            <img class="modfal-image" id="modalImage">
+                            <span class="modal-text" id="modalText"></span>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+            <div id="4" class="col-md-3">
+                <div id="carousel-slowboatdeallado" class="carousel slide mt-1" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="mb-1">
+                                <img class="w-100" src="../imgs/laos/slowboatdeallado1.jpeg"
+                                    onclick="openModal('../imgs/laos/slowboatdeallado1.jpeg')">
+
+                                <!-- Modal Structure -->
+                                <div id="imageModal" class="modal" onclick="closeModal(event)">
+
+                                    <div class="modal-content">
+                                        <img class="modal-image" id="modalImage">
+                                        <span class="modal-text" id="modalText"></span>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="mb-1">
+                                <img class="w-100" src="../imgs/laos/slowboatdeallado2.jpeg"
+                                    onclick="openModal('../imgs/laos/slowboatdeallado2.jpeg')">
+
+                                <!-- Modal Structure -->
+                                <div id="imageModal" class="modal" onclick="closeModal(event)">
+                                    <div class="modal-content">
+                                        <img class="modal-image" id="modalImage">
+                                        <span class="modal-text" id="modalText"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="mb-1">
+                                <img class="w-100" src="../imgs/laos/slowboatdeallado3.jpeg"
+                                    onclick="openModal('../imgs/laos/slowboatdeallado3.jpeg')">
+
+                                <!-- Modal Structure -->
+                                <div id="imageModal" class="modal" onclick="closeModal(event)">
+                                    <div class="modal-content">
+                                        <img class="modal-image" id="modalImage">
+                                        <span class="modal-text" id="modalText"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <a class="carousel-control-prev" href="#carousel-slowboatdeallado" role="button"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#carousel-slowboatdeallado" role="button"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    </a>
+                </div>
+                <div class="mt-1">
+                    <img class="w-100" src="../imgs/laos/elslowboat.jpeg"
+                        onclick="openModal('../imgs/laos/elslowboat.jpeg')">
+
+                    <!-- Modal Structure -->
+                    <div id="imageModal" class="modal" onclick="closeModal(event)">
+                        <div class="modal-content">
+                            <img class="modal-image" id="modalImage">
+                            <span class="modal-text" id="modalText"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="carousel-nenesynenasrio" class="carousel slide mt-1" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="mb-1">
+                                <img class="w-100" src="../imgs/laos/nenerio.jpeg"
+                                    onclick="openModal('../imgs/laos/nenerio.jpeg')">
+
+                                <!-- Modal Structure -->
+                                <div id="imageModal" class="modal" onclick="closeModal(event)">
+
+                                    <div class="modal-content">
+                                        <img class="modal-image" id="modalImage">
+                                        <span class="modal-text" id="modalText"></span>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="mb-1">
+                                <img class="w-100" src="../imgs/laos/nenasrio.jpeg"
+                                    onclick="openModal('../imgs/laos/nenasrio.jpeg')">
+
+                                <!-- Modal Structure -->
+                                <div id="imageModal" class="modal" onclick="closeModal(event)">
+                                    <div class="modal-content">
+                                        <img class="modal-image" id="modalImage">
+                                        <span class="modal-text" id="modalText"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carousel-nenesynenasrio" role="button" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#carousel-nenesynenasrio" role="button" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    </a>
+                </div>
+                <div class="mt-1">
+                    <img class="w-100" src="../imgs/laos/susbarcos.jpeg"
+                        onclick="openModal('../imgs/laos/susbarcos.jpeg','los barcos que usan para moverse por el río')">
+
+                    <!-- Modal Structure -->
+                    <div id="imageModal" class="modal" onclick="closeModal(event)">
+                        <div class="modal-content">
+                            <img class="modal-image" id="modalImage">
+                            <span class="modal-text" id="modalText"></span>
+                        </div>
+                    </div>
+                </div>
+                <div id="carousel-nenespulserasrio" class="carousel slide mt-1" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="mb-1">
+                                <img class="w-100" src="../imgs/laos/nenespulseras.jpeg"
+                                    onclick="openModal('../imgs/laos/nenespulseras.jpeg')">
+
+                                <!-- Modal Structure -->
+                                <div id="imageModal" class="modal" onclick="closeModal(event)">
+
+                                    <div class="modal-content">
+                                        <img class="modal-image" id="modalImage">
+                                        <span class="modal-text" id="modalText"></span>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="mb-1">
+                                <img class="w-100" src="../imgs/laos/closeupnenepulserario.jpeg"
+                                    onclick="openModal('../imgs/laos/closeupnenepulserario.jpeg')">
+
+                                <!-- Modal Structure -->
+                                <div id="imageModal" class="modal" onclick="closeModal(event)">
+                                    <div class="modal-content">
+                                        <img class="modal-image" id="modalImage">
+                                        <span class="modal-text" id="modalText"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carousel-nenespulserasrio" role="button"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#carousel-nenespulserasrio" role="button"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+        <div id="page_subtitle2" style="position:absolute;right:5px; font-size: 1em;">
+        </div>
+
+        <div class="container-fluid mt-3">
+            <div class="row mx-0 g-2">
+                <div id="5" class="col-md-3">
+                    <div class="mt-3">
+                        <img class="w-100" src="../imgs/laos/callesdeluangprabang.jpeg"
+                            onclick="openModal('../imgs/laos/callesdeluangprabang.jpeg','calle de Luang Prabang')">
+
+                        <!-- Modal Structure -->
+                        <div id="imageModal" class="modal" onclick="closeModal(event)">
+                            <div class="modal-content">
+                                <img class="modal-image" id="modalImage">
+                                <span class="modal-text" id="modalText"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="6" class="col-md-3">
+                    <div class="mt-1">
+                        <img class="w-100" src="../imgs/laos/nongkhiaw.jpeg"
+                            onclick="openModal('../imgs/laos/nongkhiaw.jpeg','Nong Khiaw')">
+
+                        <!-- Modal Structure -->
+                        <div id="imageModal" class="modal" onclick="closeModal(event)">
+                            <div class="modal-content">
+                                <img class="modal-image" id="modalImage">
+                                <span class="modal-text" id="modalText"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-1">
+                        <img class="w-100" src="../imgs/laos/puentenongkhiaw.jpeg"
+                            onclick="openModal('../imgs/laos/puentenongkhiaw.jpeg')">
+
+                        <!-- Modal Structure -->
+                        <div id="imageModal" class="modal" onclick="closeModal(event)">
+                            <div class="modal-content">
+                                <img class="modal-image" id="modalImage">
+                                <span class="modal-text" id="modalText"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="7" class="col-md-3">
+                    <div id="carousel-monjesnongkhiaw" class="carousel slide mt-2" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div>
+                                    <img class="w-100" src="../imgs/laos/mongesnongkhiaw1.jpeg"
+                                        onclick="openModal('../imgs/laos/mongesnongkhiaw1.jpeg','monjes en Nong Khiaw')">
+    
+                                    <!-- Modal Structure -->
+                                    <div id="imageModal" class="modal" onclick="closeModal(event)">
+    
+                                        <div class="modal-content">
+                                            <img class="modal-image" id="modalImage">
+                                            <span class="modal-text" id="modalText"></span>
+                                        </div>
+    
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div>
+                                    <img class="w-100" src="../imgs/laos/mongesnongkhiaw2.jpeg"
+                                        onclick="openModal('../imgs/laos/mongesnongkhiaw2.jpeg','monjes en Nong Khiaw')">
+    
+                                    <!-- Modal Structure -->
+                                    <div id="imageModal" class="modal" onclick="closeModal(event)">
+                                        <div class="modal-content">
+                                            <img class="modal-image" id="modalImage">
+                                            <span class="modal-text" id="modalText"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carousel-monjesnongkhiaw" role="button" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        </a>
+                        <a class="carousel-control-next" href="#carousel-monjesnongkhiaw" role="button" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        </a>
+                    </div>
+
+                    <div class="mt-1">
+                        <img class="w-100" src="../imgs/laos/barconongkhiaw.jpeg"
+                            onclick="openModal('../imgs/laos/barconongkhiaw.jpeg')">
+
+                        <!-- Modal Structure -->
+                        <div id="imageModal" class="modal" onclick="closeModal(event)">
+                            <div class="modal-content">
+                                <img class="modal-image" id="modalImage">
+                                <span class="modal-text" id="modalText"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div id="8" class="col-md-3">
+
+                    <div id="carousel-secmaleta" class="carousel slide mt-4" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="mb-1">
+                                    <img class="w-100" src="../imgs/laos/secmaleta0.jpeg"
+                                        onclick="openModal('../imgs/laos/secmaleta0.jpeg')">
+    
+                                    <!-- Modal Structure -->
+                                    <div id="imageModal" class="modal" onclick="closeModal(event)">
+    
+                                        <div class="modal-content">
+                                            <img class="modal-image" id="modalImage">
+                                            <span class="modal-text" id="modalText"></span>
+                                        </div>
+    
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="mb-1">
+                                    <img class="w-100" src="../imgs/laos/secmaleta1.jpeg"
+                                        onclick="openModal('../imgs/laos/secmaleta1.jpeg')">
+    
+                                    <!-- Modal Structure -->
+                                    <div id="imageModal" class="modal" onclick="closeModal(event)">
+                                        <div class="modal-content">
+                                            <img class="modal-image" id="modalImage">
+                                            <span class="modal-text" id="modalText"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="mb-1">
+                                    <img class="w-100" src="../imgs/laos/secmaleta2.jpeg"
+                                        onclick="openModal('../imgs/laos/secmaleta2.jpeg')">
+    
+                                    <!-- Modal Structure -->
+                                    <div id="imageModal" class="modal" onclick="closeModal(event)">
+                                        <div class="modal-content">
+                                            <img class="modal-image" id="modalImage">
+                                            <span class="modal-text" id="modalText"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="mb-1">
+                                    <img class="w-100" src="../imgs/laos/secmaleta3.jpeg"
+                                        onclick="openModal('../imgs/laos/secmaleta3.jpeg')">
+    
+                                    <!-- Modal Structure -->
+                                    <div id="imageModal" class="modal" onclick="closeModal(event)">
+                                        <div class="modal-content">
+                                            <img class="modal-image" id="modalImage">
+                                            <span class="modal-text" id="modalText"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="mb-1">
+                                    <img class="w-100" src="../imgs/laos/secmaleta4.jpeg"
+                                        onclick="openModal('../imgs/laos/secmaleta4.jpeg')">
+    
+                                    <!-- Modal Structure -->
+                                    <div id="imageModal" class="modal" onclick="closeModal(event)">
+                                        <div class="modal-content">
+                                            <img class="modal-image" id="modalImage">
+                                            <span class="modal-text" id="modalText"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="mb-1">
+                                    <img class="w-100" src="../imgs/laos/secmaleta5.jpeg"
+                                        onclick="openModal('../imgs/laos/secmaleta5.jpeg')">
+    
+                                    <!-- Modal Structure -->
+                                    <div id="imageModal" class="modal" onclick="closeModal(event)">
+                                        <div class="modal-content">
+                                            <img class="modal-image" id="modalImage">
+                                            <span class="modal-text" id="modalText"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carousel-secmaleta" role="button" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        </a>
+                        <a class="carousel-control-next" href="#carousel-secmaleta" role="button" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        </a>
+                    </div>
+
+                    <div class="mt-1">
+                        <img class="w-100" src="../imgs/laos/lasvistasdelahabitacion.jpeg"
+                            onclick="openModal('../imgs/laos/lasvistasdelahabitacion.jpeg')">
+
+                        <!-- Modal Structure -->
+                        <div id="imageModal" class="modal" onclick="closeModal(event)">
+                            <div class="modal-content">
+                                <img class="modal-image" id="modalImage">
+                                <span class="modal-text" id="modalText"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+            crossorigin="anonymous"></script>
+        <script src="../js/borradoresdeviaje.js"></script>
+</body>
+
+</html>
