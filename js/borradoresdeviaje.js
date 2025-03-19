@@ -168,7 +168,7 @@ document.addEventListener('DOMContentLoaded', function() {
         path_to_languages = "../";
     } 
     else if (path.includes('index') ||  path.includes('/')) {
-        elementsToTranslate = ['about_us','series-sin-mal'];
+        elementsToTranslate = ['about_us','series-sin-mal','series-camb'];
         path_to_languages = "";
     }
     // Call the function with the elements specific to the page
