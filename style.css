@@ -34,12 +34,14 @@ footer {
     position: fixed;
     bottom: 0;
     margin-left: 8%;
+    margin-right: 8%;
 }
 
 .footer-block {
     display: flex;
     justify-content: space-between;
     gap: 20px;
+    flex-wrap: wrap; /* Allow wrapping of items to the next line */
 }
 
 .footer-block a {
