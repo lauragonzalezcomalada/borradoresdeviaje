@@ -1,5 +1,4 @@
 {
-
 	"bdv_header": {
 		"prefix": "bdv_basefile",
 		"body": [
@@ -17,22 +16,17 @@
 			"}",
 			"</script>",
 			"</head>",
-
 			"<body id=\"series-X\">",
-
 			"<div style=\"display: flex; align-items: center;margin:10px 20px;\">",
 			"<a href=\"../index.html\">",
 			"<img src=\"../imgs/home_icon.png\" style=\"height:20px;\"></img>",
 			"</a>",
-
 			"<select id=\"language-selector\">",
 			"<option value=\"cat\">CAT</option>",
 			"<option value=\"es\">ARG</option>",
 			" </select>",
 			"</div>",
-
 			"<div id=\"page_title\" class=\"page_title\" style=\"position:absolute;right:0;top:10px; font-size: 2em;\"></div>",
-
 			"<div class=\"container-fluid mt-4\">",
 			"<div class=\"row mx-0 g-2\">",
 			"<div id=\"1\" class=\"col-md-3\">1</div>",
@@ -41,19 +35,78 @@
 			"<div id=\"4\" class=\"col-md-3\">4</div>",
 			"</div>",
 			"</div>",
-
 			"<script src=\"https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js\" integrity=\"sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p\" crossorigin=\"anonymous\"></script>",
 			"<script src=\"../js/borradoresdeviaje.js\"></script>",
 			"</body>",
 			"</html>"
-
-
 		],
-	
 		"description": "Base file de cada series"
 	},
+	"bdv_carr": {
+		"prefix": "carr",
+		"body": [
+			"<div id=\"carousel-ID\" class=\"carousel slide mt-1\" data-bs-ride=\"carousel\">",
+			"<div class=\"carousel-inner\">",
+			"<div class=\"carousel-item active\">",
+			"<div class=\"mb-1\">",
+			"<img class=\"w-100\" src=\"../imgs/.jpeg\" onclick=\"openModal('../imgs/.jpeg','TEXT')\">",
+			"<!-- Modal Structure -->",
+			"<div id=\"imageModal\" class=\"modal\" onclick=\"closeModal(event)\">",
+			" <div class=\"modal-content\">",
+			"<img class=\"modal-image\" id=\"modalImage\">",
+			"<span class=\"modal-text\" id=\"modalText\"></span>",
+			"</div>",
+			"</div>",
+			"</div>",
+			"</div>",
+			"<div class=\"carousel-item\">",
+			"<div class=\"mb-1\">",
+			"<img class=\"w-100\" src=\"../imgs/.jpeg\" onclick=\"openModal('../imgs/.jpeg','TEXT')\">",
+			"<!-- Modal Structure -->",
+			"<div id=\"imageModal\" class=\"modal\" onclick=\"closeModal(event)\">",
+			"<div class=\"modal-content\">",
+			"<img class=\"modal-image\" id=\"modalImage\">",
+			"<span class=\"modal-text\" id=\"modalText\"></span>",
+			"</div>",
+			"</div>",
+			"</div>",
+			"</div>",
+			"</div>",
+			"<a class=\"carousel-control-prev\" href=\"#carousel-ID\" role=\"button\" data-bs-slide=\"prev\">",
+			"<span class=\"carousel-control-prev-icon\" aria-hidden=\"true\"></span>",
+			"</a>",
+			"<a class=\"carousel-control-next\" href=\"#carousel-ID\" role=\"button\" data-bs-slide=\"next\">",
+			"<span class=\"carousel-control-next-icon\" aria-hidden=\"true\"></span>",
+			"</a>",
+			"</div>"
+		],
+		"description": "estructura de carrousel"
+	},
+
+	"bdv_imagensuelta": {
+		"prefix": "imagen",
+		"body": [
+			"<div>",
+                    "<img class=\"w-100 mt-1\" src=\"../imgs/.jpeg\" onclick=\"openModal('../imgs/.jpeg','TEXTO')\">",
+					"<div id=\"imageModal\" class=\"modal\" onclick=\"closeModal(event)\">",
+					"<div class=\"modal-content\">",
+						"<img class=\"modal-image\" id=\"modalImage\">",
+						"<span class=\"modal-text\" id=\"modalText\"></span>",
+					"</div>",
+				"</div>",
+				"</div>"
+
+		],
+		"description": "estructura de modal imagen"
+	},
+
 
 }
 
 
 
+
+
+
+                    
+                
