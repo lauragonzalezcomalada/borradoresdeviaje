@@ -87,7 +87,7 @@
 		"prefix": "imagen",
 		"body": [
 			"<div>",
-                    "<img class=\"w-100 mt-1\" src=\"../imgs/.jpeg\" onclick=\"openModal('../imgs/.jpeg','TEXTO')\">",
+                    "<img class=\"w-100 mt-1\" src=\"../imgs/.jpeg\" onclick=\"openModal('../imgs/','TEXTO')\">",
 					"<div id=\"imageModal\" class=\"modal\" onclick=\"closeModal(event)\">",
 					"<div class=\"modal-content\">",
 						"<img class=\"modal-image\" id=\"modalImage\">",
