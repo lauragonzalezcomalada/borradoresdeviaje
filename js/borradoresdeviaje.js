@@ -167,6 +167,10 @@ document.addEventListener('DOMContentLoaded', function() {
         elementsToTranslate = ['ciutat_buida','ciutat_buida_texto'];
         path_to_languages = "../";
     } 
+    else if (path.includes('cambo')) {
+        elementsToTranslate = ['no_me_daban_lastima','no_me_daban_lastima_texto'];
+        path_to_languages = "../";
+    } 
     else if (path.includes('index') ||  path.includes('/')) {
         elementsToTranslate = ['about_us','series-sin-mal','series-camb'];
         path_to_languages = "";
