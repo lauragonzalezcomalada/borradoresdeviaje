@@ -37,7 +37,7 @@
     <div class="container-fluid mt-4">
         <div class="row mx-0 g-2">
             <div id="1" class="col-md-3">
-                <div id="carousel-battambang" class="carousel slide mt-1" data-bs-ride="carousel">
+                <div id="carousel-battambang" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
                             <div class="mb-1">
@@ -203,7 +203,7 @@
                         </div>
                     </div>
                 </div>
-                <div id="carousel-bamboostick" class="carousel slide mt-1" data-bs-ride="carousel">
+                <div id="carousel-bamboostick" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
                             <div class="mb-1">
@@ -399,7 +399,7 @@
                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     </a>
                 </div>
-                <div id="carousel-nosotrosarboles" class="carousel slide mt-1" data-bs-ride="carousel">
+                <div id="carousel-nosotrosarboles" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
                             <div class="mb-1">
@@ -447,9 +447,19 @@
                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     </a>
                 </div>
+                <div>
+                    <img class="w-100" src="../imgs/cambodja/minis/mini_raices.jpg"
+                        onclick="openModal('../imgs/cambodja/raices.jpeg','la naturaleza abriéndose camino')">
+                    <div id="imageModal" class="modal" onclick="closeModal(event)">
+                        <div class="modal-content">
+                            <img class="modal-image" id="modalImage">
+                            <span class="modal-text" id="modalText"></span>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div id="2" class="col-md-3">
-                <div id="carousel-nenes" class="carousel slide mt-1" data-bs-ride="carousel">
+                <div id="carousel-nenes" class="carousel slide mt-3" data-bs-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
                             <div class="mb-1">
@@ -524,7 +534,7 @@
                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     </a>
                 </div>
-                <div id="carousel-lacasa" class="carousel slide mt-1" data-bs-ride="carousel">
+                <div id="carousel-lacasa" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
                             <div class="mb-1">
@@ -573,7 +583,7 @@
                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     </a>
                 </div>
-                <div class="accordion mt-1" style="padding:0;width:auto; --accordion-bg-color: var(--amarillo-color); border-top: 10px solid transparent;
+                <div class="accordion" style="padding:0;width:auto; --accordion-bg-color: var(--amarillo-color); border-top: 10px solid transparent;
         border-bottom: 10px solid transparent;">
                     <p class="accordion-btn" id="no_me_daban_lastima" style="font-size:larger;font-weight: lighter;">
                     </p>
@@ -708,7 +718,7 @@
                 </div>
                 
                 
-                <div id="carousel-cortador" class="carousel slide  mt-1" data-bs-ride="carousel">
+                <div id="carousel-cortador" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
                             <div class="mb-1">
@@ -912,7 +922,7 @@
                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     </a>
                 </div>
-                <div id="carousel-detalles" class="carousel slide mt-1" data-bs-ride="carousel">
+                <div id="carousel-detalles" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
                             <div class="mb-1">
@@ -948,7 +958,7 @@
                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     </a>
                 </div>
-                <div id="carousel-angkoralolejos" class="carousel slide mt-1" data-bs-ride="carousel">
+                <div id="carousel-angkoralolejos" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
                             <div class="mb-1">
@@ -1006,7 +1016,7 @@
                 </div>
             </div>
             <div id="3" class="col-md-3">
-                <div>
+                <div class="mt-1">
                     <img class="w-100" src="../imgs/cambodja/minis/mini_vaqui.jpg"
                         onclick="openModal('../imgs/cambodja/vaqui.jpeg')">
                     <div id="imageModal" class="modal" onclick="closeModal(event)">
@@ -1264,7 +1274,7 @@
                     </a>
                 </div>
                 <div>
-                    <img class="w-100 mt-1" src="../imgs/cambodja/minis/mini_monobueno.jpg"
+                    <img class="w-100" src="../imgs/cambodja/minis/mini_monobueno.jpg"
                         onclick="openModal('../imgs/cambodja/monobueno.jpeg')">
                     <div id="imageModal" class="modal" onclick="closeModal(event)">
                         <div class="modal-content">
@@ -1388,7 +1398,7 @@
                 </div>
 
                 <div>
-                    <img class="w-100 mt-1" src="../imgs/cambodja/minis/mini_torre.jpg"
+                    <img class="w-100" src="../imgs/cambodja/minis/mini_torre.jpg"
                         onclick="openModal('../imgs/cambodja/torre.jpeg')">
                     <div id="imageModal" class="modal" onclick="closeModal(event)">
                         <div class="modal-content">
@@ -1456,20 +1466,11 @@
                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     </a>
                 </div>
-                <div>
-                    <img class="w-100 mt-1" src="../imgs/cambodja/minis/mini_raices.jpg"
-                        onclick="openModal('../imgs/cambodja/raices.jpeg','la naturaleza abriéndose camino')">
-                    <div id="imageModal" class="modal" onclick="closeModal(event)">
-                        <div class="modal-content">
-                            <img class="modal-image" id="modalImage">
-                            <span class="modal-text" id="modalText"></span>
-                        </div>
-                    </div>
-                </div>
+                
             </div>
             <div id="4" class="col-md-3">
 
-                <div id="carousel-nenesvertical" class="carousel slide mt-1" data-bs-ride="carousel">
+                <div id="carousel-nenesvertical" class="carousel slide mt-2" data-bs-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
                             <div class="mb-1">
@@ -1608,7 +1609,7 @@
                     </a>
                 </div>
                 <div>
-                    <img class="w-100 mt-1" src="../imgs/cambodja/minis/mini_monumentomuertos2.jpg"
+                    <img class="w-100" src="../imgs/cambodja/minis/mini_monumentomuertos2.jpg"
                         onclick="openModal('../imgs/cambodja/monumentomuertos2.jpeg','monumento a los asesinados por el régimen de los Jemeres Rojos')">
                     <div id="imageModal" class="modal" onclick="closeModal(event)">
                         <div class="modal-content">
@@ -1699,7 +1700,7 @@
                     </a>
                 </div>
                 <div>
-                    <img class="w-100 mt-1" src="../imgs/cambodja/minis/mini_manuymono.jpg"
+                    <img class="w-100" src="../imgs/cambodja/minis/mini_manuymono.jpg"
                         onclick="openModal('../imgs/cambodja/manuymono.jpeg')">
                     <div id="imageModal" class="modal" onclick="closeModal(event)">
                         <div class="modal-content">
