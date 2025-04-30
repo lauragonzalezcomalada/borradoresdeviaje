@@ -166,13 +166,20 @@ document.addEventListener('DOMContentLoaded', function() {
     }else if (path.includes('singapur')) {
         elementsToTranslate = ['ciutat_buida','ciutat_buida_texto'];
         path_to_languages = "../";
+    } else if (path.includes('laos')) {
+        elementsToTranslate = ['desc-laos'];
+        path_to_languages = "../";
     } 
     else if (path.includes('cambo')) {
         elementsToTranslate = ['no_me_daban_lastima','no_me_daban_lastima_texto'];
         path_to_languages = "../";
     } 
+    else if (path.includes('maca')) {
+        elementsToTranslate = ['largodiaenmacao'];
+        path_to_languages = "../";
+    } 
     else if (path.includes('index') ||  path.includes('/')) {
-        elementsToTranslate = ['about_us','series-sin-mal','series-camb'];
+        elementsToTranslate = ['about_us','series-sin-mal','series-camb','series-mac'];
         path_to_languages = "";
     }
     // Call the function with the elements specific to the page

@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../styles/colors.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        window.onload = function () {
+            if (document.getElementById('language-selector').value === 'cat') {
+                logTitle("miniseriesmacau", "page_title", 100);
+
+            } else {
+                logTitle("miniseriesmacao", "page_title", 100);
+
+            }
+        }
+    </script>
+</head>
+
+<body id="series-macao">
+    <div style="display: flex; align-items: center;margin:10px 20px;">
+        <a href="../index.html">
+            <img src="../imgs/home_icon.png" style="height:20px;"></img>
+        </a>
+        <select id="language-selector">
+            <option value="cat">CAT</option>
+            <option value="es">ARG</option>
+        </select>
+    </div>
+    <div id="page_title" class="page_title" style="position:absolute;right:0;top:10px; font-size: 2em;"></div>
+    <div id="largodiaenmacao" style="position:absolute;right:0.1em;top:50px; font-size: 1em;">
+    </div>
+    <div class="container-fluid mt-4">
+        <div class="row mx-0 g-2">
+            <div id="1" class="col-md-3">
+                <div id="carousel-zahahadid" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="mb-1">
+                                <img class="w-100" src="../imgs/macao/minis/mini_zahahadid_v.jpg"
+                                    onclick="openModal('../imgs/macao/zahahadid_v.JPG','Morpheus Hotel, de Zaha Hadid')">
+                                <!-- Modal Structure -->
+                                <div id="imageModal" class="modal" onclick="closeModal(event)">
+                                    <div class="modal-content">
+                                        <img class="modal-image" id="modalImage">
+                                        <span class="modal-text" id="modalText"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="mb-1">
+                                <img class="w-100" src="../imgs/macao/minis/mini_zahahadid_v2.jpg"
+                                    onclick="openModal('../imgs/macaozahahadid_v2/.JPG')">
+                                <!-- Modal Structure -->
+                                <div id="imageModal" class="modal" onclick="closeModal(event)">
+                                    <div class="modal-content">
+                                        <img class="modal-image" id="modalImage">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="mb-1">
+                                <img class="w-100" src="../imgs/macao/minis/mini_zahahadid_v3.jpg"
+                                    onclick="openModal('../imgs/macaozahahadid_v3/.JPG')">
+                                <!-- Modal Structure -->
+                                <div id="imageModal" class="modal" onclick="closeModal(event)">
+                                    <div class="modal-content">
+                                        <img class="modal-image" id="modalImage">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carousel-zahahadid" role="button" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#carousel-zahahadid" role="button" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    </a>
+                </div>
+                <div id="carousel-casinos" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="mb-1">
+                                <img class="w-100" src="../imgs/macao/minis/mini_casinos1.jpg"
+                                    onclick="openModal('../imgs/macao/casinos1.JPG','el motivo del turismo de Macao')">
+                                <!-- Modal Structure -->
+                                <div id="imageModal" class="modal" onclick="closeModal(event)">
+                                    <div class="modal-content">
+                                        <img class="modal-image" id="modalImage">
+                                        <span class="modal-text" id="modalText"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="mb-1">
+                                <img class="w-100" src="../imgs/macao/minis/mini_casinos2.jpg"
+                                    onclick="openModal('../imgs/macao/casinos2.JPG','el motivo del turismo de Macao')">
+                                <!-- Modal Structure -->
+                                <div id="imageModal" class="modal" onclick="closeModal(event)">
+                                    <div class="modal-content">
+                                        <img class="modal-image" id="modalImage">
+                                        <span class="modal-text" id="modalText"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carousel-casinos" role="button" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#carousel-casinos" role="button" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    </a>
+                </div>
+                <div>
+                    <img class="w-100" src="../imgs/macao/minis/mini_barsitodentro.jpg"
+                        onclick="openModal('../imgs/macao/basitodentro.JPG')">
+                    <div id="imageModal" class="modal" onclick="closeModal(event)">
+                        <div class="modal-content">
+                            <img class="modal-image" id="modalImage">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="2" class="col-md-3">
+                <div id="carousel-spottheman" class="carousel slide mt-2" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="mb-1">
+                                <img class="w-100" src="../imgs/macao/minis/mini_spottheman.jpg"
+                                    onclick="openModal('../imgs/macao/spottheman.JPG','encuentren al hombre')">
+                                <!-- Modal Structure -->
+                                <div id="imageModal" class="modal" onclick="closeModal(event)">
+                                    <div class="modal-content">
+                                        <img class="modal-image" id="modalImage">
+                                        <span class="modal-text" id="modalText"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="mb-1">
+                                <img class="w-100" src="../imgs/macao/minis/mini_spottheman2.jpg"
+                                    onclick="openModal('../imgs/macao/spottheman2.JPG','encuentren al hombre')">
+                                <!-- Modal Structure -->
+                                <div id="imageModal" class="modal" onclick="closeModal(event)">
+                                    <div class="modal-content">
+                                        <img class="modal-image" id="modalImage">
+                                        <span class="modal-text" id="modalText"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carousel-spottheman" role="button" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#carousel-spottheman" role="button" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    </a>
+                </div>
+                <div id="carousel-calles" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="mb-1">
+                                <img class="w-100" src="../imgs/macao/minis/mini_calles_v.jpg"
+                                    onclick="openModal('../imgs/macao/calles_v.JPG','las calles de Macao')">
+                                <!-- Modal Structure -->
+                                <div id="imageModal" class="modal" onclick="closeModal(event)">
+                                    <div class="modal-content">
+                                        <img class="modal-image" id="modalImage">
+                                        <span class="modal-text" id="modalText"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="mb-1">
+                                <img class="w-100" src="../imgs/macao/minis/mini_calles_v2.jpg"
+                                    onclick="openModal('../imgs/macao/calles_v2.JPG','las calles de Macao')">
+                                <!-- Modal Structure -->
+                                <div id="imageModal" class="modal" onclick="closeModal(event)">
+                                    <div class="modal-content">
+                                        <img class="modal-image" id="modalImage">
+                                        <span class="modal-text" id="modalText"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="mb-1">
+                                <img class="w-100" src="../imgs/macao/minis/mini_calles_v3.jpg"
+                                    onclick="openModal('../imgs/macao/calles_v3.JPG','las calles de Macao')">
+                                <!-- Modal Structure -->
+                                <div id="imageModal" class="modal" onclick="closeModal(event)">
+                                    <div class="modal-content">
+                                        <img class="modal-image" id="modalImage">
+                                        <span class="modal-text" id="modalText"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="mb-1">
+                                <img class="w-100" src="../imgs/macao/minis/mini_calles_v4.jpg"
+                                    onclick="openModal('../imgs/macao/calles_v4.JPG','las calles de Macao')">
+                                <!-- Modal Structure -->
+                                <div id="imageModal" class="modal" onclick="closeModal(event)">
+                                    <div class="modal-content">
+                                        <img class="modal-image" id="modalImage">
+                                        <span class="modal-text" id="modalText"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carousel-calles" role="button" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#carousel-calles" role="button" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    </a>
+                </div>
+                <div>
+                    <img class="w-100" src="../imgs/macao/minis/mini_lauranaranja.jpg"
+                        onclick="openModal('../imgs/macao/lauranaranja.JPG','todo mal en Macao')">
+                    <div id="imageModal" class="modal" onclick="closeModal(event)">
+                        <div class="modal-content">
+                            <img class="modal-image" id="modalImage">
+                            <span class="modal-text" id="modalText"></span>
+                        </div>
+                    </div>
+                </div>
+                <div id="carousel-iglesia" class="carousel slide mt-1" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="mb-1">
+                                <img class="w-100" src="../imgs/macao/minis/mini_iglesia.jpg"
+                                    onclick="openModal('../imgs/macao/iglesia.JPG')">
+                                <!-- Modal Structure -->
+                                <div id="imageModal" class="modal" onclick="closeModal(event)">
+                                    <div class="modal-content">
+                                        <img class="modal-image" id="modalImage">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="mb-1">
+                                <img class="w-100" src="../imgs/macao/minis/mini_iglesia2.jpg"
+                                    onclick="openModal('../imgs/macao/iglesia2.JPG')">
+                                <!-- Modal Structure -->
+                                <div id="imageModal" class="modal" onclick="closeModal(event)">
+                                    <div class="modal-content">
+                                        <img class="modal-image" id="modalImage">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carousel-iglesia" role="button" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#carousel-iglesia" role="button" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    </a>
+                </div>
+            </div>
+            <div id="3" class="col-md-3">
+                <div class="mt-3">
+                    <img class="w-100 mt-1" src="../imgs/macao/minis/mini_combinaciongrandlisboa.jpg"
+                        onclick="openModal('../imgs/macao/combinaciongrandlisboa.JPG','contraste entre las calles de Macao y el Grand Lisboa, el casino principal')">
+                    <div id="imageModal" class="modal" onclick="closeModal(event)">
+                        <div class="modal-content">
+                            <img class="modal-image" id="modalImage">
+                            <span class="modal-text" id="modalText"></span>
+                        </div>
+                    </div>
+                </div>
+                <div id="carousel-gente" class="carousel slide mt-1" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="mb-1">
+                                <img class="w-100" src="../imgs/macao/minis/mini_gente.jpg"
+                                    onclick="openModal('../imgs/macao/gente.JPG','y aun así, llena de turistas chinos')">
+                                <!-- Modal Structure -->
+                                <div id="imageModal" class="modal" onclick="closeModal(event)">
+                                    <div class="modal-content">
+                                        <img class="modal-image" id="modalImage">
+                                        <span class="modal-text" id="modalText"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="mb-1">
+                                <img class="w-100" src="../imgs/macao/minis/mini_gente2.jpg"
+                                    onclick="openModal('../imgs/macao/gente2.JPG','y aun así llena de turistas chinos')">
+                                <!-- Modal Structure -->
+                                <div id="imageModal" class="modal" onclick="closeModal(event)">
+                                    <div class="modal-content">
+                                        <img class="modal-image" id="modalImage">
+                                        <span class="modal-text" id="modalText"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="mb-1">
+                                <img class="w-100" src="../imgs/macao/minis/mini_gente3.jpg"
+                                    onclick="openModal('../imgs/macao/gente3.JPG','y aun así llena de turistas chinos')">
+                                <!-- Modal Structure -->
+                                <div id="imageModal" class="modal" onclick="closeModal(event)">
+                                    <div class="modal-content">
+                                        <img class="modal-image" id="modalImage">
+                                        <span class="modal-text" id="modalText"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="mb-1">
+                                <img class="w-100" src="../imgs/macao/minis/mini_gente4.jpg"
+                                    onclick="openModal('../imgs/macao/gente4.JPG','y aun así llena de turistas chinos')">
+                                <!-- Modal Structure -->
+                                <div id="imageModal" class="modal" onclick="closeModal(event)">
+                                    <div class="modal-content">
+                                        <img class="modal-image" id="modalImage">
+                                        <span class="modal-text" id="modalText"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carousel-gente" role="button" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#carousel-gente" role="button" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    </a>
+                </div>
+                <div>
+                    <img class="w-100 mb-1" src="../imgs/macao/minis/mini_zoom.jpg"
+                        onclick="openModal('../imgs/macao/zoom.JPG')">
+                    <div id="imageModal" class="modal" onclick="closeModal(event)">
+                        <div class="modal-content">
+                            <img class="modal-image" id="modalImage">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="4" class="col-md-3">
+                <div id="carousel-dentro" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="mb-1">
+                                <img class="w-100" src="../imgs/macao/minis/mini_dentro1.jpg"
+                                    onclick="openModal('../imgs/macao/dentro1.JPG')">
+                                <!-- Modal Structure -->
+                                <div id="imageModal" class="modal" onclick="closeModal(event)">
+                                    <div class="modal-content">
+                                        <img class="modal-image" id="modalImage">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="mb-1">
+                                <img class="w-100" src="../imgs/macao/minis/mini_dentro2.jpg"
+                                    onclick="openModal('../imgs/macao/dentro2.JPG')">
+                                <!-- Modal Structure -->
+                                <div id="imageModal" class="modal" onclick="closeModal(event)">
+                                    <div class="modal-content">
+                                        <img class="modal-image" id="modalImage">
+                                        <span class="modal-text" id="modalText"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carousel-dentro" role="button" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#carousel-dentro" role="button" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    </a>
+                </div>
+                <div id="carousel-recap_h" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="mb-1">
+                                <img class="w-100" src="../imgs/macao/minis/mini_recap_h.jpg"
+                                    onclick="openModal('../imgs/macao/recap_h.JPG')">
+                                <!-- Modal Structure -->
+                                <div id="imageModal" class="modal" onclick="closeModal(event)">
+                                    <div class="modal-content">
+                                        <img class="modal-image" id="modalImage">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="mb-1">
+                                <img class="w-100" src="../imgs/macao/minis/mini_recap_h2.jpg"
+                                    onclick="openModal('../imgs/macao/recap_h2.JPG')">
+                                <!-- Modal Structure -->
+                                <div id="imageModal" class="modal" onclick="closeModal(event)">
+                                    <div class="modal-content">
+                                        <img class="modal-image" id="modalImage">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="mb-1">
+                                <img class="w-100" src="../imgs/macao/minis/mini_recap_h3.jpg"
+                                    onclick="openModal('../imgs/macao/recap_h3.JPG')">
+                                <!-- Modal Structure -->
+                                <div id="imageModal" class="modal" onclick="closeModal(event)">
+                                    <div class="modal-content">
+                                        <img class="modal-image" id="modalImage">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="mb-1">
+                                <img class="w-100" src="../imgs/macao/minis/mini_recap_h4.jpg"
+                                    onclick="openModal('../imgs/macao/recap_h4.JPG')">
+                                <!-- Modal Structure -->
+                                <div id="imageModal" class="modal" onclick="closeModal(event)">
+                                    <div class="modal-content">
+                                        <img class="modal-image" id="modalImage">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="mb-1">
+                                <img class="w-100" src="../imgs/macao/minis/mini_recap_h5.jpg"
+                                    onclick="openModal('../imgs/macao/recap_h5.JPG')">
+                                <!-- Modal Structure -->
+                                <div id="imageModal" class="modal" onclick="closeModal(event)">
+                                    <div class="modal-content">
+                                        <img class="modal-image" id="modalImage">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carousel-recap_h" role="button" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#carousel-recap_h" role="button" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    </a>
+                </div>
+                <div>
+                    <img class="w-100" src="../imgs/macao/minis/mini_subidas.jpg"
+                        onclick="openModal('../imgs/macao/subidas.JPG')">
+                    <div id="imageModal" class="modal" onclick="closeModal(event)">
+                        <div class="modal-content">
+                            <img class="modal-image" id="modalImage">
+                            <span class="modal-text" id="modalText"></span>
+                        </div>
+                    </div>
+                </div>
+                <div id="carousel-mix_h" class="carousel slide mt-1" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="mb-1">
+                                <img class="w-100" src="../imgs/macao/minis/mini_verduleria.jpg"
+                                    onclick="openModal('../imgs/macao/verduleria.JPG')">
+                                <!-- Modal Structure -->
+                                <div id="imageModal" class="modal" onclick="closeModal(event)">
+                                    <div class="modal-content">
+                                        <img class="modal-image" id="modalImage">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="mb-1">
+                                <img class="w-100" src="../imgs/macao/minis/mini_patios.jpg"
+                                    onclick="openModal('../imgs/macao/patios.JPG')">
+                                <!-- Modal Structure -->
+                                <div id="imageModal" class="modal" onclick="closeModal(event)">
+                                    <div class="modal-content">
+                                        <img class="modal-image" id="modalImage">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="mb-1">
+                                <img class="w-100" src="../imgs/macao/minis/mini_zoom2.jpg"
+                                    onclick="openModal('../imgs/macao/zoom2.JPG')">
+                                <!-- Modal Structure -->
+                                <div id="imageModal" class="modal" onclick="closeModal(event)">
+                                    <div class="modal-content">
+                                        <img class="modal-image" id="modalImage">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carousel-mix_h" role="button" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#carousel-mix_h" role="button" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <script src="../js/borradoresdeviaje.js"></script>
+</body>
+
+</html>
