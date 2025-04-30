@@ -1,0 +1,1430 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../styles/colors.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        window.onload = function () {
+            logTitle("seriesvietnam", "page_title", 100);
+            //  logTitle("Saigón, la capital de Vietnam del Sud o la ciudad de los nueve millones de motos", "page_subtitle", 100);
+        }
+    </script>
+</head>
+
+<body id="series-vietnam">
+    <div style="display: flex; align-items: center;margin:10px 20px;">
+        <a href="../index.html">
+            <img src="../imgs/home_icon.png" style="height:20px;"></img>
+        </a>
+        <select id="language-selector">
+            <option value="cat">CAT</option>
+            <option value="es">ARG</option>
+        </select>
+    </div>
+    <div id="page_title" class="page_title" style="position:absolute;right:0;top:10px; font-size: 2em;"></div>
+    <!--<div id="page_subtitle" style="position:absolute;left:5px; font-size: 1em;">
+    </div> -->
+    <div class="container-fluid mt-4">
+        <div class="row mx-0 g-2">
+            <div id="1" class="col-md-3">
+                <div id="carousel-callessaigon" class="carousel slide mt-4" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="mb-1">
+                                <img class="w-100" src="../imgs/vietnam/minis/mini_callejonessaigon3.jpg"
+                                    onclick="openModal('../imgs/vietnam/callejonessaigon3.jpeg','las calles donde vivía la gente en Saigon, capital de Vietnam del Sur')">
+                                <!-- Modal Structure -->
+                                <div id="imageModal" class="modal" onclick="closeModal(event)">
+                                    <div class="modal-content">
+                                        <img class="modal-image" id="modalImage">
+                                        <span class="modal-text" id="modalText"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="mb-1">
+                                <img class="w-100" src="../imgs/vietnam/minis/mini_callejonessaigon2.jpg"
+                                    onclick="openModal('../imgs/vietnam/callejonessaigon2.jpeg')">
+                                <!-- Modal Structure -->
+                                <div id="imageModal" class="modal" onclick="closeModal(event)">
+                                    <div class="modal-content">
+                                        <img class="modal-image" id="modalImage">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="mb-1">
+                                <img class="w-100" src="../imgs/vietnam/minis/mini_callejonessaigon4.jpg"
+                                    onclick="openModal('../imgs/vietnam/callejonessaigon4.jpeg')">
+                                <!-- Modal Structure -->
+                                <div id="imageModal" class="modal" onclick="closeModal(event)">
+                                    <div class="modal-content">
+                                        <img class="modal-image" id="modalImage">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carousel-callessaigon" role="button" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#carousel-callessaigon" role="button" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    </a>
+                </div>
+                <div id="carousel-rosa" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="mb-1">
+                                <img class="w-100" src="../imgs/vietnam/minis/mini_closeuprosa.jpg"
+                                    onclick="openModal('../imgs/vietnam/closeuprosa.jpeg','jugando con el enfoque')">
+                                <!-- Modal Structure -->
+                                <div id="imageModal" class="modal" onclick="closeModal(event)">
+                                    <div class="modal-content">
+                                        <img class="modal-image" id="modalImage">
+                                        <span class="modal-text" id="modalText"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="mb-1">
+                                <img class="w-100" src="../imgs/vietnam/minis/mini_closeuprosa2.jpg"
+                                    onclick="openModal('../imgs/vietnam/closeuprosa2.jpeg','jugando con el enfoque')">
+                                <!-- Modal Structure -->
+                                <div id="imageModal" class="modal" onclick="closeModal(event)">
+                                    <div class="modal-content">
+                                        <img class="modal-image" id="modalImage">
+                                        <span class="modal-text" id="modalText"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="mb-1">
+                                <img class="w-100" src="../imgs/vietnam/minis/mini_closeuprosa3.jpg"
+                                    onclick="openModal('../imgs/vietnam/closeuprosa3.jpeg','jugando con el enfoque')">
+                                <!-- Modal Structure -->
+                                <div id="imageModal" class="modal" onclick="closeModal(event)">
+                                    <div class="modal-content">
+                                        <img class="modal-image" id="modalImage">
+                                        <span class="modal-text" id="modalText"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <a class="carousel-control-prev" href="#carousel-rosa" role="button" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#carousel-rosa" role="button" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    </a>
+                </div>
+                <div>
+                    <img class="w-100" src="../imgs/vietnam/minis/mini_hoianmujermoto.jpg"
+                        onclick="openModal('../imgs/vietnam/hoianmujermoto.jpeg')">
+                    <div id="imageModal" class="modal" onclick="closeModal(event)">
+                        <div class="modal-content">
+                            <img class="modal-image" id="modalImage">
+                        </div>
+                    </div>
+                </div>
+                <div id="carousel-monigotesmadera" class="carousel slide mt-1" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="mb-1">
+                                <img class="w-100" src="../imgs/vietnam/minis/mini_monigotesmadera.jpg"
+                                    onclick="openModal('../imgs/vietnam/monigotesmadera.jpeg','artista local tallaba caras')">
+                                <!-- Modal Structure -->
+                                <div id="imageModal" class="modal" onclick="closeModal(event)">
+                                    <div class="modal-content">
+                                        <img class="modal-image" id="modalImage">
+                                        <span class="modal-text" id="modalText"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="mb-1">
+                                <img class="w-100" src="../imgs/vietnam/minis/mini_monigotesmadera2.jpg"
+                                    onclick="openModal('../imgs/vietnam/monigotesmadera2.jpeg','artista local tallaba caras')">
+                                <!-- Modal Structure -->
+                                <div id="imageModal" class="modal" onclick="closeModal(event)">
+                                    <div class="modal-content">
+                                        <img class="modal-image" id="modalImage">
+                                        <span class="modal-text" id="modalText"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="mb-1">
+                                <img class="w-100" src="../imgs/vietnam/minis/mini_monigotesmadera3.jpg"
+                                    onclick="openModal('../imgs/vietnam/monigotesmadera3.jpeg','artista local tallaba caras')">
+                                <!-- Modal Structure -->
+                                <div id="imageModal" class="modal" onclick="closeModal(event)">
+                                    <div class="modal-content">
+                                        <img class="modal-image" id="modalImage">
+                                        <span class="modal-text" id="modalText"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="mb-1">
+                                <img class="w-100" src="../imgs/vietnam/minis/mini_monigotesmadera4.jpg"
+                                    onclick="openModal('../imgs/vietnam/monigotesmadera4.jpeg','artista local tallaba caras')">
+                                <!-- Modal Structure -->
+                                <div id="imageModal" class="modal" onclick="closeModal(event)">
+                                    <div class="modal-content">
+                                        <img class="modal-image" id="modalImage">
+                                        <span class="modal-text" id="modalText"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carousel-monigotesmadera" role="button"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#carousel-monigotesmadera" role="button"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    </a>
+                </div>
+                <div>
+                    <img class="w-100" src="../imgs/vietnam/minis/mini_nieblalago3.jpg"
+                        onclick="openModal('../imgs/vietnam/nieblalago3.jpeg')">
+                    <div id="imageModal" class="modal" onclick="closeModal(event)">
+                        <div class="modal-content">
+                            <img class="modal-image" id="modalImage">
+                            <span class="modal-text" id="modalText"></span>
+                        </div>
+                    </div>
+                </div>
+                <div id="carousel-pueblohalong" class="carousel slide mt-1" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="mb-1">
+                                <img class="w-100" src="../imgs/vietnam/minis/mini_pueblohalong1.jpg"
+                                    onclick="openModal('../imgs/vietnam/pueblohalong1.jpeg','la aldea flotante de Ha Long Bay')">
+                                <!-- Modal Structure -->
+                                <div id="imageModal" class="modal" onclick="closeModal(event)">
+                                    <div class="modal-content">
+                                        <img class="modal-image" id="modalImage">
+                                        <span class="modal-text" id="modalText"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="mb-1">
+                                <img class="w-100" src="../imgs/vietnam/minis/mini_pueblohalong2.jpg"
+                                    onclick="openModal('../imgs/vietnam/pueblohalong2.jpeg','la aldea flotante de Ha Long Bay')">
+                                <!-- Modal Structure -->
+                                <div id="imageModal" class="modal" onclick="closeModal(event)">
+                                    <div class="modal-content">
+                                        <img class="modal-image" id="modalImage">
+                                        <span class="modal-text" id="modalText"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="mb-1">
+                                <img class="w-100" src="../imgs/vietnam/minis/mini_pueblohalong3.jpg"
+                                    onclick="openModal('../imgs/vietnam/pueblohalong3.jpeg','la aldea flotante de Ha Long Bay')">
+                                <!-- Modal Structure -->
+                                <div id="imageModal" class="modal" onclick="closeModal(event)">
+                                    <div class="modal-content">
+                                        <img class="modal-image" id="modalImage">
+                                        <span class="modal-text" id="modalText"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="mb-1">
+                                <img class="w-100" src="../imgs/vietnam/minis/mini_pueblohalong4.jpg"
+                                    onclick="openModal('../imgs/vietnam/pueblohalong4.jpeg','la aldea flotante de Ha Long Bay')">
+                                <!-- Modal Structure -->
+                                <div id="imageModal" class="modal" onclick="closeModal(event)">
+                                    <div class="modal-content">
+                                        <img class="modal-image" id="modalImage">
+                                        <span class="modal-text" id="modalText"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carousel-pueblohalong" role="button" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#carousel-pueblohalong" role="button" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    </a>
+                </div>
+                <div>
+                    <img class="w-100" src="../imgs/vietnam/minis/mini_halong_v.jpg"
+                        onclick="openModal('../imgs/vietnam/halong_v.jpeg')">
+                    <div id="imageModal" class="modal" onclick="closeModal(event)">
+                        <div class="modal-content">
+                            <img class="modal-image" id="modalImage">
+                        </div>
+                    </div>
+                </div>
+                <div id="carousel-nosotroshalong" class="carousel slide mt-1" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item">
+                            <div class="mb-1">
+                                <img class="w-100" src="../imgs/vietnam/minis/mini_lauramanu_noantonio.jpg"
+                                    onclick="openModal('../imgs/vietnam/lauramanu_noantonio.jpeg')">
+                                <!-- Modal Structure -->
+                                <div id="imageModal" class="modal" onclick="closeModal(event)">
+                                    <div class="modal-content">
+                                        <img class="modal-image" id="modalImage">
+                                        <span class="modal-text" id="modalText"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item active">
+                            <div class="mb-1">
+                                <img class="w-100" src="../imgs/vietnam/minis/mini_lauramamahalong_h.jpg"
+                                    onclick="openModal('../imgs/vietnam/mini_lauramamahalong_h.jpeg')">
+                                <!-- Modal Structure -->
+                                <div id="imageModal" class="modal" onclick="closeModal(event)">
+                                    <div class="modal-content">
+                                        <img class="modal-image" id="modalImage">
+                                        <span class="modal-text" id="modalText"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="mb-1">
+                                <img class="w-100" src="../imgs/vietnam/minis/mini_manuhalongcolon.jpg"
+                                    onclick="openModal('../imgs/vietnam/manuhalongcolon.jpeg')">
+                                <!-- Modal Structure -->
+                                <div id="imageModal" class="modal" onclick="closeModal(event)">
+                                    <div class="modal-content">
+                                        <img class="modal-image" id="modalImage">
+                                        <span class="modal-text" id="modalText"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="mb-1">
+                                <img class="w-100" src="../imgs/vietnam/minis/mini_manuhalongguapo.jpg"
+                                    onclick="openModal('../imgs/vietnam/manuhalongguapo.jpeg')">
+                                <!-- Modal Structure -->
+                                <div id="imageModal" class="modal" onclick="closeModal(event)">
+                                    <div class="modal-content">
+                                        <img class="modal-image" id="modalImage">
+                                        <span class="modal-text" id="modalText"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carousel-nosotroshalong" role="button" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#carousel-nosotroshalong" role="button" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    </a>
+                </div>
+                <div>
+                    <img class="w-100" src="../imgs/vietnam/minis/mini_nuestrobarco.jpg"
+                        onclick="openModal('../imgs/vietnam/nuestrobarco.jpeg')">
+                    <div id="imageModal" class="modal" onclick="closeModal(event)">
+                        <div class="modal-content">
+                            <img class="modal-image" id="modalImage">
+                        </div>
+                    </div>
+                </div>
+                <div id="carousel-barcasninhbinh" class="carousel slide mt-1" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="mb-1">
+                                <img class="w-100" src="../imgs/vietnam/minis/mini_mujeresninhbinh.jpg"
+                                    onclick="openModal('../imgs/vietnam/mujeresninhbinh.jpeg','las mujeres de las barcas en Ninh Binh')">
+                                <!-- Modal Structure -->
+                                <div id="imageModal" class="modal" onclick="closeModal(event)">
+                                    <div class="modal-content">
+                                        <img class="modal-image" id="modalImage">
+                                        <span class="modal-text" id="modalText"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="mb-1">
+                                <img class="w-100" src="../imgs/vietnam/minis/mini_barcosninhbinh.jpg"
+                                    onclick="openModal('../imgs/vietnam/barcosninhbinh.jpeg')">
+                                <!-- Modal Structure -->
+                                <div id="imageModal" class="modal" onclick="closeModal(event)">
+                                    <div class="modal-content">
+                                        <img class="modal-image" id="modalImage">
+                                        <span class="modal-text" id="modalText"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="mb-1">
+                                <img class="w-100" src="../imgs/vietnam/minis/mini_mujerbarcaninhbinh.jpg"
+                                    onclick="openModal('../imgs/vietnam/mujerbarcaninhbinh.jpeg')">
+                                <!-- Modal Structure -->
+                                <div id="imageModal" class="modal" onclick="closeModal(event)">
+                                    <div class="modal-content">
+                                        <img class="modal-image" id="modalImage">
+                                        <span class="modal-text" id="modalText"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carousel-barcasninhbinh" role="button" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#carousel-barcasninhbinh" role="button" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    </a>
+                </div>
+                <div id="carousel-templofarolillos" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="mb-1">
+                                <img class="w-100" src="../imgs/vietnam/minis/mini_templocerca2.jpg"
+                                    onclick="openModal('../imgs/vietnam/templocerca2.jpeg')">
+                                <!-- Modal Structure -->
+                                <div id="imageModal" class="modal" onclick="closeModal(event)">
+                                    <div class="modal-content">
+                                        <img class="modal-image" id="modalImage">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="mb-1">
+                                <img class="w-100" src="../imgs/vietnam/minis/mini_templocerca3.jpg"
+                                    onclick="openModal('../imgs/vietnam/templocerca3.jpeg')">
+                                <!-- Modal Structure -->
+                                <div id="imageModal" class="modal" onclick="closeModal(event)">
+                                    <div class="modal-content">
+                                        <img class="modal-image" id="modalImage">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carousel-templofarolillos" role="button" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#carousel-templofarolillos" role="button" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    </a>
+                </div>
+            </div>
+            <div id="2" class="col-md-3">
+                <div class="mt-2">
+                    <img class="w-100 mt-1" src="../imgs/vietnam/minis/mini_calleshochiminh.jpg"
+                        onclick="openModal('../imgs/vietnam/calleshochiminh.jpeg')">
+                    <div id="imageModal" class="modal" onclick="closeModal(event)">
+                        <div class="modal-content">
+                            <img class="modal-image" id="modalImage">
+                        </div>
+                    </div>
+                </div>
+                <div id="carousel-casadalat" class="carousel slide mt-1" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item">
+                            <div class="mb-1">
+                                <img class="w-100" src="../imgs/vietnam/minis/mini_casadalat.jpg"
+                                    onclick="openModal('../imgs/vietnam/casadalat.jpeg','el decorado perfecto en Dalat')">
+                                <!-- Modal Structure -->
+                                <div id="imageModal" class="modal" onclick="closeModal(event)">
+                                    <div class="modal-content">
+                                        <img class="modal-image" id="modalImage">
+                                        <span class="modal-text" id="modalText"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="mb-1">
+                                <img class="w-100" src="../imgs/vietnam/minis/mini_casadalat2.jpg"
+                                    onclick="openModal('../imgs/vietnam/casadalat2.jpeg','el decorado perfecto en Dalat')">
+                                <!-- Modal Structure -->
+                                <div id="imageModal" class="modal" onclick="closeModal(event)">
+                                    <div class="modal-content">
+                                        <img class="modal-image" id="modalImage">
+                                        <span class="modal-text" id="modalText"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item active">
+                            <div class="mb-1">
+                                <img class="w-100" src="../imgs/vietnam/minis/mini_casadalat3.jpg"
+                                    onclick="openModal('../imgs/vietnam/casadalat3.jpeg','el decorado perfecto en Dalat')">
+                                <!-- Modal Structure -->
+                                <div id="imageModal" class="modal" onclick="closeModal(event)">
+                                    <div class="modal-content">
+                                        <img class="modal-image" id="modalImage">
+                                        <span class="modal-text" id="modalText"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carousel-casadalat" role="button" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#carousel-casadalat" role="button" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    </a>
+                </div>
+                <div id="carousel-dentrohivernaderos" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="mb-1">
+                                <img class="w-100" src="../imgs/vietnam/minis/mini_frutadalat2.jpg"
+                                    onclick="openModal('../imgs/vietnam/frutadalat2.jpeg')">
+                                <!-- Modal Structure -->
+                                <div id="imageModal" class="modal" onclick="closeModal(event)">
+                                    <div class="modal-content">
+                                        <img class="modal-image" id="modalImage">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="mb-1">
+                                <img class="w-100" src="../imgs/vietnam/minis/mini_frutadalat.jpg"
+                                    onclick="openModal('../imgs/vietnam/frutadalat.jpeg')">
+                                <!-- Modal Structure -->
+                                <div id="imageModal" class="modal" onclick="closeModal(event)">
+                                    <div class="modal-content">
+                                        <img class="modal-image" id="modalImage">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="mb-1">
+                                <img class="w-100" src="../imgs/vietnam/minis/mini_frutadalat3.jpg"
+                                    onclick="openModal('../imgs/vietnam/frutadalat3.jpeg')">
+                                <!-- Modal Structure -->
+                                <div id="imageModal" class="modal" onclick="closeModal(event)">
+                                    <div class="modal-content">
+                                        <img class="modal-image" id="modalImage">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carousel-dentrohivernaderos" role="button"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#carousel-dentrohivernaderos" role="button"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    </a>
+                </div>
+                <div>
+                    <img class="w-100" src="../imgs/vietnam/minis/mini_callejoneshivernaderosdalat.jpg"
+                        onclick="openModal('../imgs/vietnam/callejoneshivernaderosdalat.jpeg','unas horas más tarde sufriríamos la cuesta')">
+                    <div id="imageModal" class="modal" onclick="closeModal(event)">
+                        <div class="modal-content">
+                            <img class="modal-image" id="modalImage">
+                            <span class="modal-text" id="modalText"></span>
+                        </div>
+                    </div>
+                </div>
+                <div id="carousel-nosotroshoian" class="carousel slide mt-1" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="mb-1">
+                                <img class="w-100" src="../imgs/vietnam/minis/mini_manuhoian.jpg"
+                                    onclick="openModal('../imgs/vietnam/manuhoian.jpeg')">
+                                <!-- Modal Structure -->
+                                <div id="imageModal" class="modal" onclick="closeModal(event)">
+                                    <div class="modal-content">
+                                        <img class="modal-image" id="modalImage">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="mb-1">
+                                <img class="w-100" src="../imgs/vietnam/minis/mini_laurahoian.jpg"
+                                    onclick="openModal('../imgs/vietnam/laurahoian.jpeg')">
+                                <!-- Modal Structure -->
+                                <div id="imageModal" class="modal" onclick="closeModal(event)">
+                                    <div class="modal-content">
+                                        <img class="modal-image" id="modalImage">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="mb-1">
+                                <img class="w-100" src="../imgs/vietnam/minis/mini_manuhoian2.jpg"
+                                    onclick="openModal('../imgs/vietnam/manuhoian2.jpeg')">
+                                <!-- Modal Structure -->
+                                <div id="imageModal" class="modal" onclick="closeModal(event)">
+                                    <div class="modal-content">
+                                        <img class="modal-image" id="modalImage">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carousel-nosotroshoian" role="button" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#carousel-nosotroshoian" role="button" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    </a>
+                </div>
+                <div id="carousel-mujeresflores" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="mb-1">
+                                <img class="w-100" src="../imgs/vietnam/minis/mini_mujeresflores2.jpg"
+                                    onclick="openModal('../imgs/vietnam/mujeresflores2.jpeg','las mujeres floristas en Hanoi')">
+                                <!-- Modal Structure -->
+                                <div id="imageModal" class="modal" onclick="closeModal(event)">
+                                    <div class="modal-content">
+                                        <img class="modal-image" id="modalImage">
+                                        <span class="modal-text" id="modalText"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="mb-1">
+                                <img class="w-100" src="../imgs/vietnam/minis/mini_mujeresfruta2.jpg"
+                                    onclick="openModal('../imgs/vietnam/mujeresfruta2.jpeg','las mujeres fruteras en Hanoi')">
+                                <!-- Modal Structure -->
+                                <div id="imageModal" class="modal" onclick="closeModal(event)">
+                                    <div class="modal-content">
+                                        <img class="modal-image" id="modalImage">
+                                        <span class="modal-text" id="modalText"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carousel-mujeresflores" role="button" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#carousel-mujeresflores" role="button" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    </a>
+                </div>
+                <div id="carousel-alfombras" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="mb-1">
+                                <img class="w-100" src="../imgs/vietnam/minis/mini_alfombras.jpg"
+                                    onclick="openModal('../imgs/vietnam/alfombras.jpeg')">
+                                <!-- Modal Structure -->
+                                <div id="imageModal" class="modal" onclick="closeModal(event)">
+                                    <div class="modal-content">
+                                        <img class="modal-image" id="modalImage">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="mb-1">
+                                <img class="w-100" src="../imgs/vietnam/minis/mini_alfombras2.jpg"
+                                    onclick="openModal('../imgs/vietnam/alfombras2.jpeg')">
+                                <!-- Modal Structure -->
+                                <div id="imageModal" class="modal" onclick="closeModal(event)">
+                                    <div class="modal-content">
+                                        <img class="modal-image" id="modalImage">
+                                        <span class="modal-text" id="modalText"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carousel-alfombras" role="button" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#carousel-alfombras" role="button" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    </a>
+                </div>
+                <div>
+                    <img class="w-100" src="../imgs/vietnam/minis/mini_irenefacha2.jpg"
+                        onclick="openModal('../imgs/vietnam/irenefacha2.jpeg')">
+                    <div id="imageModal" class="modal" onclick="closeModal(event)">
+                        <div class="modal-content">
+                            <img class="modal-image" id="modalImage">
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <img class="w-100 mt-1" src="../imgs/vietnam/minis/mini_barconene.jpg"
+                        onclick="openModal('../imgs/vietnam/barconene.jpeg')">
+                    <div id="imageModal" class="modal" onclick="closeModal(event)">
+                        <div class="modal-content">
+                            <img class="modal-image" id="modalImage">
+                        </div>
+                    </div>
+                </div>
+                <div id="carousel-nenehalong" class="carousel slide mt-1" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="mb-1">
+                                <img class="w-100" src="../imgs/vietnam/minis/mini_nenehalong.jpg"
+                                    onclick="openModal('../imgs/vietnam/nenehalong.jpeg')">
+                                <!-- Modal Structure -->
+                                <div id="imageModal" class="modal" onclick="closeModal(event)">
+                                    <div class="modal-content">
+                                        <img class="modal-image" id="modalImage">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="mb-1">
+                                <img class="w-100" src="../imgs/vietnam/minis/mini_nenehalong2.jpg"
+                                    onclick="openModal('../imgs/vietnam/nenehalong2.jpeg')">
+                                <!-- Modal Structure -->
+                                <div id="imageModal" class="modal" onclick="closeModal(event)">
+                                    <div class="modal-content">
+                                        <img class="modal-image" id="modalImage">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carousel-nenehalong" role="button" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#carousel-nenehalong" role="button" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    </a>
+                </div>
+                <div>
+                    <img class="w-100" src="../imgs/vietnam/minis/mini_manucontentohalong.jpg"
+                        onclick="openModal('../imgs/vietnam/manucontentohalong.jpeg','un despertar en el Mar de la China Meridional')">
+                    <div id="imageModal" class="modal" onclick="closeModal(event)">
+                        <div class="modal-content">
+                            <img class="modal-image" id="modalImage">
+                            <span class="modal-text" id="modalText"></span>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <img class="w-100 mt-1" src="../imgs/vietnam/minis/mini_papahalong.jpg"
+                        onclick="openModal('../imgs/vietnam/papahalong.jpeg')">
+                    <div id="imageModal" class="modal" onclick="closeModal(event)">
+                        <div class="modal-content">
+                            <img class="modal-image" id="modalImage">
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <img class="w-100 mt-1" src="../imgs/vietnam/minis/mini_laurabarcaninhbinh.jpg"
+                        onclick="openModal('../imgs/vietnam/laurabarcaninhbinh.jpeg')">
+                    <div id="imageModal" class="modal" onclick="closeModal(event)">
+                        <div class="modal-content">
+                            <img class="modal-image" id="modalImage">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="3" class="col-md-3">
+                <div class="mt-3">
+                    <img class="w-100 mt-1" src="../imgs/vietnam/minis/mini_callejonessaigon.jpg"
+                        onclick="openModal('../imgs/vietnam/callejonessaigon.jpeg')">
+                    <div id="imageModal" class="modal" onclick="closeModal(event)">
+                        <div class="modal-content">
+                            <img class="modal-image" id="modalImage">
+                        </div>
+                    </div>
+                </div>
+                <div id="carousel-dalatpueblo" class="carousel slide mt-1" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="mb-1">
+                                <img class="w-100" src="../imgs/vietnam/minis/mini_casasdalat.jpg"
+                                    onclick="openModal('../imgs/vietnam/casasdalat.jpeg','las casas entre los hivernaderos')">
+                                <!-- Modal Structure -->
+                                <div id="imageModal" class="modal" onclick="closeModal(event)">
+                                    <div class="modal-content">
+                                        <img class="modal-image" id="modalImage">
+                                        <span class="modal-text" id="modalText"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="mb-1">
+                                <img class="w-100" src="../imgs/vietnam/minis/mini_casasdalat_v.jpg"
+                                    onclick="openModal('../imgs/vietnam/casasdalat_v.jpeg')">
+                                <!-- Modal Structure -->
+                                <div id="imageModal" class="modal" onclick="closeModal(event)">
+                                    <div class="modal-content">
+                                        <img class="modal-image" id="modalImage">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carousel-dalatpueblo" role="button" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#carousel-dalatpueblo" role="button" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    </a>
+                </div>
+                <div id="carousel-riohoian" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="mb-1">
+                                <img class="w-100" src="../imgs/vietnam/minis/mini_hoianrio.jpg"
+                                    onclick="openModal('../imgs/vietnam/hoianrio.jpeg','el rio de Hoi An')">
+                                <!-- Modal Structure -->
+                                <div id="imageModal" class="modal" onclick="closeModal(event)">
+                                    <div class="modal-content">
+                                        <img class="modal-image" id="modalImage">
+                                        <span class="modal-text" id="modalText"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="mb-1">
+                                <img class="w-100" src="../imgs/vietnam/minis/mini_hoianrio2.jpg"
+                                    onclick="openModal('../imgs/vietnam/hoianrio2.jpeg','el rio de Hoi An')">
+                                <!-- Modal Structure -->
+                                <div id="imageModal" class="modal" onclick="closeModal(event)">
+                                    <div class="modal-content">
+                                        <img class="modal-image" id="modalImage">
+                                        <span class="modal-text" id="modalText"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carousel-riohoian" role="button" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#carousel-riohoian" role="button" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    </a>
+                </div>
+                <div id="carousel-laurasombrero" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="mb-1">
+                                <img class="w-100" src="../imgs/vietnam/minis/mini_laurasombrero.jpg"
+                                    onclick="openModal('../imgs/vietnam/laurasombrero.jpeg','probándome un sombrero vietnamita')">
+                                <!-- Modal Structure -->
+                                <div id="imageModal" class="modal" onclick="closeModal(event)">
+                                    <div class="modal-content">
+                                        <img class="modal-image" id="modalImage">
+                                        <span class="modal-text" id="modalText"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="mb-1">
+                                <img class="w-100" src="../imgs/vietnam/minis/mini_laurasombrero2.jpg"
+                                    onclick="openModal('../imgs/vietnam/laurasombrero2.jpeg')">
+                                <!-- Modal Structure -->
+                                <div id="imageModal" class="modal" onclick="closeModal(event)">
+                                    <div class="modal-content">
+                                        <img class="modal-image" id="modalImage">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carousel-laurasombrero" role="button" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#carousel-laurasombrero" role="button" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    </a>
+                </div>
+                <div id="carousel-tren" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="mb-1">
+                                <img class="w-100" src="../imgs/vietnam/minis/mini_mama.jpg"
+                                    onclick="openModal('../imgs/vietnam/mama.jpeg')">
+                                <!-- Modal Structure -->
+                                <div id="imageModal" class="modal" onclick="closeModal(event)">
+                                    <div class="modal-content">
+                                        <img class="modal-image" id="modalImage">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="mb-1">
+                                <img class="w-100" src="../imgs/vietnam/minis/mini_papa.jpg"
+                                    onclick="openModal('../imgs/vietnam/papa.jpeg')">
+                                <!-- Modal Structure -->
+                                <div id="imageModal" class="modal" onclick="closeModal(event)">
+                                    <div class="modal-content">
+                                        <img class="modal-image" id="modalImage">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="mb-1">
+                                <img class="w-100" src="../imgs/vietnam/minis/mini_manutren.jpg"
+                                    onclick="openModal('../imgs/vietnam/manutren.jpeg')">
+                                <!-- Modal Structure -->
+                                <div id="imageModal" class="modal" onclick="closeModal(event)">
+                                    <div class="modal-content">
+                                        <img class="modal-image" id="modalImage">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="mb-1">
+                                <img class="w-100" src="../imgs/vietnam/minis/mini_calletren.jpg"
+                                    onclick="openModal('../imgs/vietnam/calletren.jpeg')">
+                                <!-- Modal Structure -->
+                                <div id="imageModal" class="modal" onclick="closeModal(event)">
+                                    <div class="modal-content">
+                                        <img class="modal-image" id="modalImage">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carousel-tren" role="button" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#carousel-tren" role="button" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    </a>
+                </div>
+                <div>
+                    <img class="w-100" src="../imgs/vietnam/minis/mini_lauramuletasmama.jpg"
+                        onclick="openModal('../imgs/vietnam/lauramuletasmama.jpeg')">
+                    <div id="imageModal" class="modal" onclick="closeModal(event)">
+                        <div class="modal-content">
+                            <img class="modal-image" id="modalImage">
+                        </div>
+                    </div>
+                </div>
+                <div id="carousel-halong" class="carousel slide mt-1" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="mb-1">
+                                <img class="w-100" src="../imgs/vietnam/minis/mini_halong.jpg"
+                                    onclick="openModal('../imgs/vietnam/halong.jpeg','la belleza de Ha Long')">
+                                <!-- Modal Structure -->
+                                <div id="imageModal" class="modal" onclick="closeModal(event)">
+                                    <div class="modal-content">
+                                        <img class="modal-image" id="modalImage">
+                                        <span class="modal-text" id="modalText"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="mb-1">
+                                <img class="w-100" src="../imgs/vietnam/minis/mini_halong2.jpg"
+                                    onclick="openModal('../imgs/vietnam/halong2.jpeg','la belleza de Ha Long')">
+                                <!-- Modal Structure -->
+                                <div id="imageModal" class="modal" onclick="closeModal(event)">
+                                    <div class="modal-content">
+                                        <img class="modal-image" id="modalImage">
+                                        <span class="modal-text" id="modalText"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="mb-1">
+                                <img class="w-100" src="../imgs/vietnam/minis/mini_halong4.jpg"
+                                    onclick="openModal('../imgs/vietnam/halong4.jpeg','la belleza de Ha Long')">
+                                <!-- Modal Structure -->
+                                <div id="imageModal" class="modal" onclick="closeModal(event)">
+                                    <div class="modal-content">
+                                        <img class="modal-image" id="modalImage">
+                                        <span class="modal-text" id="modalText"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="mb-1">
+                                <img class="w-100" src="../imgs/vietnam/minis/mini_halong6.jpg"
+                                    onclick="openModal('../imgs/vietnam/halong6.jpeg','la belleza de Ha Long')">
+                                <!-- Modal Structure -->
+                                <div id="imageModal" class="modal" onclick="closeModal(event)">
+                                    <div class="modal-content">
+                                        <img class="modal-image" id="modalImage">
+                                        <span class="modal-text" id="modalText"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carousel-halong" role="button" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#carousel-halong" role="button" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    </a>
+                </div>
+                <div id="carousel-laura_v_halong" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="mb-1">
+                                <img class="w-100" src="../imgs/vietnam/minis/mini_laurahalong.jpg"
+                                    onclick="openModal('../imgs/vietnam/laurahalong.jpeg')">
+                                <!-- Modal Structure -->
+                                <div id="imageModal" class="modal" onclick="closeModal(event)">
+                                    <div class="modal-content">
+                                        <img class="modal-image" id="modalImage">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="mb-1">
+                                <img class="w-100" src="../imgs/vietnam/minis/mini_lauramamahalong.jpg"
+                                    onclick="openModal('../imgs/vietnam/lauramamahalong.jpeg')">
+                                <!-- Modal Structure -->
+                                <div id="imageModal" class="modal" onclick="closeModal(event)">
+                                    <div class="modal-content">
+                                        <img class="modal-image" id="modalImage">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carousel-laura_v_halong" role="button" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#carousel-laura_v_halong" role="button" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    </a>
+                </div>
+                <div id="carousel-iremanuninhbinh" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="mb-1">
+                                <img class="w-100" src="../imgs/vietnam/minis/mini_iremanusenorabarca.jpg"
+                                    onclick="openModal('../imgs/vietnam/iremanusenorabarca.jpeg')">
+                                <!-- Modal Structure -->
+                                <div id="imageModal" class="modal" onclick="closeModal(event)">
+                                    <div class="modal-content">
+                                        <img class="modal-image" id="modalImage">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="mb-1">
+                                <img class="w-100" src="../imgs/vietnam/minis/mini_iremanusenorabarca2.jpg"
+                                    onclick="openModal('../imgs/vietnam/iremanusenorabarca2.jpeg')">
+                                <!-- Modal Structure -->
+                                <div id="imageModal" class="modal" onclick="closeModal(event)">
+                                    <div class="modal-content">
+                                        <img class="modal-image" id="modalImage">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="mb-1">
+                                <img class="w-100" src="../imgs/vietnam/minis/mini_irenemanusenorabarca3.jpg"
+                                    onclick="openModal('../imgs/vietnam/irenemanusenorabarca3.jpeg')">
+                                <!-- Modal Structure -->
+                                <div id="imageModal" class="modal" onclick="closeModal(event)">
+                                    <div class="modal-content">
+                                        <img class="modal-image" id="modalImage">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carousel-iremanuninhbinh" role="button"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#carousel-iremanuninhbinh" role="button"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    </a>
+                </div>
+                <div>
+                <img class="w-100" src="../imgs/vietnam/minis/mini_templochino.jpg" onclick="openModal('../imgs/vietnam/templochino.jpeg','un templo chino a lo lejos')">
+                <div id="imageModal" class="modal" onclick="closeModal(event)">
+                <div class="modal-content">
+                <img class="modal-image" id="modalImage">
+                <span class="modal-text" id="modalText"></span>
+                </div>
+                </div>
+                </div>
+            </div>
+            <div id="4" class="col-md-3">
+                <div class="mt-1">
+                    <img class="w-100 mt-1" src="../imgs/vietnam/minis/mini_calleshochiminh2.jpg"
+                        onclick="openModal('../imgs/vietnam/calleshochiminh2.jpeg')">
+                    <div id="imageModal" class="modal" onclick="closeModal(event)">
+                        <div class="modal-content">
+                            <img class="modal-image" id="modalImage">
+                        </div>
+                    </div>
+                </div>
+
+                <div id="carousel-hivernaderos" class="carousel slide mt-1" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="mb-1">
+                                <img class="w-100" src="../imgs/vietnam/minis/mini_dalathivernaderos.jpg"
+                                    onclick="openModal('../imgs/vietnam/dalathivernaderos.jpeg','las laderas de Da Lat cubiertas de hivernaderos de flores')">
+                                <!-- Modal Structure -->
+                                <div id="imageModal" class="modal" onclick="closeModal(event)">
+                                    <div class="modal-content">
+                                        <img class="modal-image" id="modalImage">
+                                        <span class="modal-text" id="modalText"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="mb-1">
+                                <img class="w-100" src="../imgs/vietnam/minis/mini_dalathivernaderos2.jpg"
+                                    onclick="openModal('../imgs/vietnam/dalathivernaderos2.jpeg','las laderas de Da Lat cubiertas de hivernaderos de')">
+                                <!-- Modal Structure -->
+                                <div id="imageModal" class="modal" onclick="closeModal(event)">
+                                    <div class="modal-content">
+                                        <img class="modal-image" id="modalImage">
+                                        <span class="modal-text" id="modalText"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carousel-hivernaderos" role="button" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#carousel-hivernaderos" role="button" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    </a>
+                </div>
+                <div id="carousel-hoiancalles" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="mb-1">
+                                <img class="w-100" src="../imgs/vietnam/minis/mini_hoiancalles.jpg"
+                                    onclick="openModal('../imgs/vietnam/hoiancalles.jpeg')">
+                                <!-- Modal Structure -->
+                                <div id="imageModal" class="modal" onclick="closeModal(event)">
+                                    <div class="modal-content">
+                                        <img class="modal-image" id="modalImage">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="mb-1">
+                                <img class="w-100" src="../imgs/vietnam/minis/mini_senorkaraokehoian.jpg"
+                                    onclick="openModal('../imgs/vietnam/senorkaraokehoian.jpeg')">
+                                <!-- Modal Structure -->
+                                <div id="imageModal" class="modal" onclick="closeModal(event)">
+                                    <div class="modal-content">
+                                        <img class="modal-image" id="modalImage">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="mb-1">
+                                <img class="w-100" src="../imgs/vietnam/minis/mini_mujeresfruta.jpg"
+                                    onclick="openModal('../imgs/vietnam/mujeresfruta.jpeg','mujer vendiendo fruta en los cestos tradicionales')">
+                                <!-- Modal Structure -->
+                                <div id="imageModal" class="modal" onclick="closeModal(event)">
+                                    <div class="modal-content">
+                                        <img class="modal-image" id="modalImage">
+                                        <span class="modal-text" id="modalText"></span>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carousel-hoiancalles" role="button" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#carousel-hoiancalles" role="button" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    </a>
+                </div>
+                <div>
+                    <img class="w-100" src="../imgs/vietnam/minis/mini_senormoto_v.jpg"
+                        onclick="openModal('../imgs/vietnam/senormoto_v.jpeg')">
+                    <div id="imageModal" class="modal" onclick="closeModal(event)">
+                        <div class="modal-content">
+                            <img class="modal-image" id="modalImage">
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <img class="w-100 mt-1" src="../imgs/vietnam/minis/mini_mausoleo.jpg"
+                        onclick="openModal('../imgs/vietnam/mausoleo.jpeg','mausoleo de Ho Chi Minh en Hanoi')">
+                    <div id="imageModal" class="modal" onclick="closeModal(event)">
+                        <div class="modal-content">
+                            <img class="modal-image" id="modalImage">
+                            <span class="modal-text" id="modalText"></span>
+                        </div>
+                    </div>
+                </div>
+                <div id="carousel-barcos" class="carousel slide mt-1" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="mb-1">
+                                <img class="w-100" src="../imgs/vietnam/minis/mini_barcos.jpg"
+                                    onclick="openModal('../imgs/vietnam/barcos.jpeg')">
+                                <!-- Modal Structure -->
+                                <div id="imageModal" class="modal" onclick="closeModal(event)">
+                                    <div class="modal-content">
+                                        <img class="modal-image" id="modalImage">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="mb-1">
+                                <img class="w-100" src="../imgs/vietnam/minis/mini_barcos2.jpg"
+                                    onclick="openModal('../imgs/vietnam/bacos2.jpeg')">
+                                <!-- Modal Structure -->
+                                <div id="imageModal" class="modal" onclick="closeModal(event)">
+                                    <div class="modal-content">
+                                        <img class="modal-image" id="modalImage">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carousel-barcos" role="button" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#carousel-barcos" role="button" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    </a>
+                </div>
+                <div>
+                    <img class="w-100" src="../imgs/vietnam/minis/mini_casaenhalong.jpg"
+                        onclick="openModal('../imgs/vietnam/casaenhalong.jpeg')">
+                    <div id="imageModal" class="modal" onclick="closeModal(event)">
+                        <div class="modal-content">
+                            <img class="modal-image" id="modalImage">
+                            <span class="modal-text" id="modalText"></span>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <img class="w-100 mt-1" src="../imgs/vietnam/minis/mini_hombrebarca.jpg"
+                        onclick="openModal('../imgs/vietnam/hombrebarca.jpeg')">
+                    <div id="imageModal" class="modal" onclick="closeModal(event)">
+                        <div class="modal-content">
+                            <img class="modal-image" id="modalImage">
+                        </div>
+                    </div>
+                </div>
+                <div id="carousel-irecantant" class="carousel slide mt-1" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="mb-1">
+                                <img class="w-100" src="../imgs/vietnam/minis/mini_irecantant.jpg"
+                                    onclick="openModal('../imgs/vietnam/irecantant.jpeg')">
+                                <!-- Modal Structure -->
+                                <div id="imageModal" class="modal" onclick="closeModal(event)">
+                                    <div class="modal-content">
+                                        <img class="modal-image" id="modalImage">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="mb-1">
+                                <img class="w-100" src="../imgs/vietnam/minis/mini_irecantant2.jpg"
+                                    onclick="openModal('../imgs/vietnam/irecantant2.jpeg')">
+                                <!-- Modal Structure -->
+                                <div id="imageModal" class="modal" onclick="closeModal(event)">
+                                    <div class="modal-content">
+                                        <img class="modal-image" id="modalImage">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carousel-irecantant" role="button" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#carousel-irecantant" role="button" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    </a>
+                </div>
+                <div id="carousel-manuuke" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="mb-1">
+                                <img class="w-100" src="../imgs/vietnam/minis/mini_manuuke.jpg"
+                                    onclick="openModal('../imgs/vietnam/manuuke.jpeg','ukeleliando en Ha Long')">
+                                <!-- Modal Structure -->
+                                <div id="imageModal" class="modal" onclick="closeModal(event)">
+                                    <div class="modal-content">
+                                        <img class="modal-image" id="modalImage">
+                                        <span class="modal-text" id="modalText"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="mb-1">
+                                <img class="w-100" src="../imgs/vietnam/minis/mini_manuuke2.jpg"
+                                    onclick="openModal('../imgs/vietnam/manuuke2.jpeg','ukeleliando en Ha Long')">
+                                <!-- Modal Structure -->
+                                <div id="imageModal" class="modal" onclick="closeModal(event)">
+                                    <div class="modal-content">
+                                        <img class="modal-image" id="modalImage">
+                                        <span class="modal-text" id="modalText"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="mb-1">
+                                <img class="w-100" src="../imgs/vietnam/minis/mini_manuuke3.jpg"
+                                    onclick="openModal('../imgs/vietnam/manuuke3.jpeg','ukeleliando en Ha Long')">
+                                <!-- Modal Structure -->
+                                <div id="imageModal" class="modal" onclick="closeModal(event)">
+                                    <div class="modal-content">
+                                        <img class="modal-image" id="modalImage">
+                                        <span class="modal-text" id="modalText"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carousel-manuuke" role="button" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#carousel-manuuke" role="button" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    </a>
+                </div>
+                <div id="carousel-nosotrosninhbinh" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="mb-1">
+                                <img class="w-100" src="../imgs/vietnam/minis/mini_lauraireninhbinh.jpg"
+                                    onclick="openModal('../imgs/vietnam/lauraireninhbinh.jpeg','Ninh Binhhhh')">
+                                <!-- Modal Structure -->
+                                <div id="imageModal" class="modal" onclick="closeModal(event)">
+                                    <div class="modal-content">
+                                        <img class="modal-image" id="modalImage">
+                                        <span class="modal-text" id="modalText"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="mb-1">
+                                <img class="w-100" src="../imgs/vietnam/minis/mini_lauraireninhbinh_2.jpg"
+                                    onclick="openModal('../imgs/vietnam/lauraireninhbinh_2.jpeg','Ninh Binhhhhh')">
+                                <!-- Modal Structure -->
+                                <div id="imageModal" class="modal" onclick="closeModal(event)">
+                                    <div class="modal-content">
+                                        <img class="modal-image" id="modalImage">
+                                        <span class="modal-text" id="modalText"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="mb-1">
+                                <img class="w-100" src="../imgs/vietnam/minis/mini_iremanuninhbinh.jpg"
+                                    onclick="openModal('../imgs/vietnam/iremanuninhbinh.jpeg','Ninh Binhhhhh')">
+                                <!-- Modal Structure -->
+                                <div id="imageModal" class="modal" onclick="closeModal(event)">
+                                    <div class="modal-content">
+                                        <img class="modal-image" id="modalImage">
+                                        <span class="modal-text" id="modalText"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="mb-1">
+                                <img class="w-100" src="../imgs/vietnam/minis/mini_lauraireninhbinhbarca.jpg"
+                                    onclick="openModal('../imgs/vietnam/lauraireninhbinhbarca.jpeg','Ninh Binhhhhh')">
+                                <!-- Modal Structure -->
+                                <div id="imageModal" class="modal" onclick="closeModal(event)">
+                                    <div class="modal-content">
+                                        <img class="modal-image" id="modalImage">
+                                        <span class="modal-text" id="modalText"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="mb-1">
+                                <img class="w-100" src="../imgs/vietnam/minis/mini_ninhbinh.jpg"
+                                    onclick="openModal('../imgs/vietnam/ninhbinh.jpeg','Ninh Binhhhhh')">
+                                <!-- Modal Structure -->
+                                <div id="imageModal" class="modal" onclick="closeModal(event)">
+                                    <div class="modal-content">
+                                        <img class="modal-image" id="modalImage">
+                                        <span class="modal-text" id="modalText"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carousel-nosotrosninhbinh" role="button"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#carousel-nosotrosninhbinh" role="button"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    </a>
+                </div>
+                <!-- FIN -->
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <script src="../js/borradoresdeviaje.js"></script>
+</body>
+
+</html>

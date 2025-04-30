@@ -45,11 +45,11 @@
 	"bdv_carr": {
 		"prefix": "carr",
 		"body": [
-			"<div id=\"carousel-ID\" class=\"carousel slide mt-1\" data-bs-ride=\"carousel\">",
+			"<div id=\"carousel-ID\" class=\"carousel slide\" data-bs-ride=\"carousel\">",
 			"<div class=\"carousel-inner\">",
 			"<div class=\"carousel-item active\">",
 			"<div class=\"mb-1\">",
-			"<img class=\"w-100\" src=\"../imgs/.jpeg\" onclick=\"openModal('../imgs/.jpeg','TEXT')\">",
+			"<img class=\"w-100\" src=\"../imgs/vietnam/minis/mini_.jpg\" onclick=\"openModal('../imgs/vietnam/.jpeg','TEXT')\">",
 			"<!-- Modal Structure -->",
 			"<div id=\"imageModal\" class=\"modal\" onclick=\"closeModal(event)\">",
 			" <div class=\"modal-content\">",
@@ -61,7 +61,7 @@
 			"</div>",
 			"<div class=\"carousel-item\">",
 			"<div class=\"mb-1\">",
-			"<img class=\"w-100\" src=\"../imgs/.jpeg\" onclick=\"openModal('../imgs/.jpeg','TEXT')\">",
+			"<img class=\"w-100\" src=\"../imgs/vietnam/minis/mini_.jpg\" onclick=\"openModal('../imgs/vietnam/.jpeg','TEXT')\">",
 			"<!-- Modal Structure -->",
 			"<div id=\"imageModal\" class=\"modal\" onclick=\"closeModal(event)\">",
 			"<div class=\"modal-content\">",
@@ -87,7 +87,7 @@
 		"prefix": "imagen",
 		"body": [
 			"<div>",
-                    "<img class=\"w-100 mt-1\" src=\"../imgs/.jpeg\" onclick=\"openModal('../imgs/','TEXTO')\">",
+                    "<img class=\"w-100 mt-1\" src=\"../imgs/vietnam/minis/mini_.jpg\" onclick=\"openModal('../imgs/vietnam/.jpeg','TEXTO')\">",
 					"<div id=\"imageModal\" class=\"modal\" onclick=\"closeModal(event)\">",
 					"<div class=\"modal-content\">",
 						"<img class=\"modal-image\" id=\"modalImage\">",
